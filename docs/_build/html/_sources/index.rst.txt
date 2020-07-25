@@ -7,14 +7,8 @@ Welcome to notebook_test's documentation!
 =========================================
 
 .. toctree::
+   :caption: Jupyter notebooks
    :maxdepth: 2
-   :caption: Contents:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   tutorial1
+   tutorial2
