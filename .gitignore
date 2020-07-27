@@ -1,2 +1,4 @@
 *.ipynb_checkpoints
 docs/_build/
+docs/tutorial_notebooks/data
+docs/tutorial_notebooks/saved_models
