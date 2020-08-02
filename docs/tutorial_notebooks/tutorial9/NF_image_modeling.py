@@ -5,7 +5,7 @@
 
 # **Goal**: show application of NFs on image modeling, assumably on MNIST. Introduce Activation Normalization, 1x1 convolution, multi-scale architecture
 
-# In[1]:
+# In[77]:
 
 
 USE_NOTEBOOK = False
@@ -23,6 +23,7 @@ if USE_NOTEBOOK:
     get_ipython().run_line_magic('matplotlib', 'inline')
     from IPython.display import set_matplotlib_formats
     set_matplotlib_formats('svg', 'pdf') # For export
+    from matplotlib.colors import hsv_to_rgb, to_rgb
 import seaborn as sns
 sns.reset_orig()
 
@@ -76,6 +77,7 @@ transform = transforms.Compose([transforms.ToTensor(),
 
 # Loading the training dataset. We need to split it into a training and validation part
 train_dataset = MNIST(root=DATASET_PATH, train=True, transform=transform, download=True)
+set_seed(42)
 train_set, val_set = torch.utils.data.random_split(train_dataset, [50000, 10000])
 
 # Loading the test set
@@ -84,7 +86,7 @@ test_set = MNIST(root=DATASET_PATH, train=False, transform=transform, download=T
 # We define a set of data loaders that we can use for various purposes later.
 # Note that for actually training a model, we will use different data loaders
 # with a lower batch size.
-train_loader = data.DataLoader(train_set, batch_size=128, shuffle=True, drop_last=False)
+train_loader = data.DataLoader(train_set, batch_size=128, shuffle=False, drop_last=False)
 val_loader = data.DataLoader(val_set, batch_size=64, shuffle=False, drop_last=False)
 test_loader = data.DataLoader(test_set, batch_size=64, shuffle=False, drop_last=False)
 
@@ -145,14 +147,15 @@ class ImageFlow(nn.Module):
         
 
 
-# In[5]:
+# In[45]:
 
 
 class Dequantization(nn.Module):
     
-    def __init__(self, alpha=1e-5):
+    def __init__(self, alpha=1e-5, quants=256):
         super().__init__()
         self.alpha = alpha
+        self.quants = quants 
         
     def forward(self, z, ldj, reverse=False):
         if not reverse:
@@ -160,8 +163,8 @@ class Dequantization(nn.Module):
             z, ldj = self.sigmoid(z, ldj, reverse=True)
         else:
             z, ldj = self.sigmoid(z, ldj, reverse=False)
-            z = z * 256
-            z = torch.floor(z).clamp(min=0, max=255).to(torch.int32)
+            z = z * self.quants
+            z = torch.floor(z).clamp(min=0, max=self.quants-1).to(torch.int32)
         return z, ldj
     
     def sigmoid(self, z, ldj, reverse=False):
@@ -178,21 +181,12 @@ class Dequantization(nn.Module):
     def dequant(self, z, ldj):
         z = z.to(torch.float32) 
         z = z + torch.rand_like(z)
-        z = z / 256.0
-        ldj -= np.log(256.0) * np.prod(z.shape[1:])
+        z = z / self.quants
+        ldj -= np.log(self.quants) * np.prod(z.shape[1:])
         return z, ldj
 
 
-# In[6]:
-
-
-z = torch.Tensor([2])
-print(-z-2*F.softplus(-z))
-z = torch.sigmoid(z)
-print(torch.log(z)+torch.log(1-z))
-
-
-# In[7]:
+# In[46]:
 
 
 orig_img = train_set[0][0].unsqueeze(dim=0)
@@ -210,7 +204,38 @@ for i in range(d1.shape[0]):
 # assert (orig_img == reconst_img).all().item()
 
 
-# In[8]:
+# In[108]:
+
+
+if USE_NOTEBOOK:
+    quants = 8
+    inp = torch.arange(-4, 4, 0.005).view(-1, 1, 1, 1)
+    ldj = torch.zeros(inp.shape[0])
+    dequant_module = Dequantization(quants=quants)
+
+    sns.set_style("white")
+    out, ldj = dequant_module.forward(inp, ldj, reverse=True)
+    inp, out, prob = inp.squeeze().numpy(), out.squeeze().numpy(), ldj.exp().numpy()
+    fig = plt.figure(figsize=(8,4))
+    x_ticks = []
+    for v in np.unique(out):
+        indices = np.where(out==v)
+        color = to_rgb("C%i"%v)
+        plt.plot(np.concatenate([inp[indices[0][0:1]], inp[indices], inp[indices[0][-1:]]], axis=0), 
+                 np.concatenate([np.array([0]), prob[indices], np.array([0])], axis=0), 
+                 color=color, linewidth=2, label=str(v))
+        plt.fill_between(inp[indices], prob[indices], np.zeros(indices[0].shape[0]), color=color+(0.5,))
+        x_ticks.append(inp[indices[0][0]])
+    x_ticks.append(inp.max())
+    plt.xticks(x_ticks, ["%.2f"%x for x in x_ticks])
+
+    plt.ylim(0, prob.max()*1.1)
+    plt.xlim(inp.min(), inp.max())
+    plt.legend()
+    plt.show()
+
+
+# In[7]:
 
 
 class VariationalDequantization(Dequantization):
@@ -232,7 +257,7 @@ class VariationalDequantization(Dequantization):
         return z, ldj
 
 
-# In[9]:
+# In[8]:
 
 
 class CouplingLayer(nn.Module):
@@ -242,9 +267,6 @@ class CouplingLayer(nn.Module):
         self.register_buffer('mask', mask)
         self.network = network
         self.scaling_factor = nn.Parameter(torch.zeros(c_in))
-        
-        #self.network[-1].weight.data.zero_()
-        #self.network[-1].bias.data.zero_()
     
     def forward(self, z, ldj, reverse=False, orig_img=None):
         z_in = z * self.mask
@@ -269,7 +291,7 @@ class CouplingLayer(nn.Module):
         return z, ldj
 
 
-# In[10]:
+# In[9]:
 
 
 def create_checkerboard_mask(h, w, invert=False):
@@ -290,12 +312,12 @@ def create_channel_mask(c_in, invert=False):
     return mask
 
 
-# In[42]:
+# In[10]:
 
 
 def train_flow(flow, max_epochs=80, sample_shape=(8,1,28,28), model_name="MNISTFlow"):
     optimizer = optim.Adam(flow.parameters(), lr=1e-3)
-    lr_scheduler = optim.lr_scheduler.StepLR(optimizer, 1, gamma=0.98) # Every epoch, we multiply the LR by 0.95
+    lr_scheduler = optim.lr_scheduler.StepLR(optimizer, 1, gamma=0.98) # Every epoch, we multiply the LR by 0.98
     train_loader = data.DataLoader(train_set, batch_size=128, shuffle=True, drop_last=True)
     
     print("Start training %s..." % model_name)
@@ -313,7 +335,7 @@ def train_flow(flow, max_epochs=80, sample_shape=(8,1,28,28), model_name="MNISTF
             nn.utils.clip_grad_norm_(flow.parameters(), 1.0)
             optimizer.step()
             
-            avg_bpd = 0.9 * avg_bpd + 0.1 * bpd.item()
+            avg_bpd = 0.95 * avg_bpd + 0.05 * bpd.item()
             if USE_NOTEBOOK:
                 pbar.set_description("[Epoch %i] Bits per dimension: %5.3fbpd" % (epoch+1, avg_bpd))
         lr_scheduler.step()
@@ -346,7 +368,7 @@ def train_flow(flow, max_epochs=80, sample_shape=(8,1,28,28), model_name="MNISTF
     test_bpd = test_flow(flow, test_loader)
     print("Test bits per dimension: %5.3fbpd" % (test_bpd))
     
-def test_flow(flow, data_loader, import_samples=8):
+def test_flow(flow, data_loader, import_samples=2):
     flow.eval()
     test_bpd, counter = 0.0, 0
     for imgs, _ in (tqdm(data_loader, leave=False, desc="Testing...") if USE_NOTEBOOK else data_loader):
@@ -370,134 +392,103 @@ def save_model(model, model_path, model_name):
     torch.save(model.state_dict(), os.path.join(model_path, model_name + ".tar"))
 
 
-# In[46]:
+# In[11]:
 
 
-class ConvNet(nn.Module):
-    def __init__(self, c_in, c_hidden=32, c_out=-1):
-        super().__init__()
-        c_out = c_out if c_out > 0 else 2 * c_in
-        self.nn = nn.Sequential(
-                        nn.Conv2d(c_in, c_hidden, 3, padding=1),
-                        nn.GELU(),
-                        nn.Conv2d(c_hidden, c_hidden, 3, padding=1),
-                        nn.GELU(),
-                        nn.Conv2d(c_hidden, c_hidden, 3, padding=1),
-                        nn.GELU(),
-                        nn.Conv2d(c_hidden, c_out, 3, padding=1)
-                     )
+class ConcatELU(nn.Module):
     
     def forward(self, x):
-        return self.nn(x)
+        return torch.cat([F.elu(x), F.elu(-x)], dim=1)
     
+class LayerNormChannels(nn.Module):
+    
+    def __init__(self, c_in):
+        super().__init__()
+        self.layer_norm = nn.LayerNorm(c_in)
+    
+    def forward(self, x):
+        x = x.permute(0, 2, 3, 1)
+        x = self.layer_norm(x)
+        x = x.permute(0, 3, 1, 2)
+        return x
 
 class GatedConv(nn.Module):
     def __init__(self, c_in, c_hidden):
         super().__init__()
         self.net = nn.Sequential(
             nn.Conv2d(c_in, c_hidden, 3, padding=1),
-            nn.GELU(),
-            nn.Conv2d(c_hidden, 2*c_in, 3, padding=1)
+            ConcatELU(),
+            nn.Conv2d(2*c_hidden, 2*c_in, 1)
         )
     
     def forward(self, x):
         out = self.net(x)
         val, gate = out.chunk(2, dim=1)
         return x + val * torch.sigmoid(gate)
+    
+class GatedAttn(nn.Module):
+    def __init__(self, c_in, c_hidden=-1, num_heads=4):
+        super().__init__()
+        if c_hidden < 0:
+            c_hidden = c_in
+        self.num_heads = num_heads
+        self.qkv = nn.Linear(c_in, c_hidden*3)
+        self.gate_mapping = nn.Linear(c_hidden, c_in*2)
+    
+    def forward(self, x):
+        inp = x.permute(0, 2, 3, 1).reshape(x.shape[0], x.shape[2]*x.shape[3], x.shape[1])
+        qkv = self.qkv(inp)
+        q, k, v = qkv.view(inp.shape[0], inp.shape[1], self.num_heads, -1).chunk(3, dim=-1)
+        qk_logits = (q.unsqueeze(dim=2) * k.unsqueeze(dim=1)).sum(dim=-1)
+        qk_logits = qk_logits * (q.shape[-1]**-0.5)
+        qk_attn = F.softmax(qk_logits, dim=2)
+        feats = (qk_attn.unsqueeze(dim=-1) * v.unsqueeze(dim=1)).sum(dim=2)
+        feats = feats.view(inp.shape[0], inp.shape[1], -1)
+        
+        out = self.gate_mapping(feats)
+        out = out.reshape(x.shape[0], x.shape[2], x.shape[3], -1).permute(0, 3, 1, 2)
+        val, gate = out.chunk(2, dim=1)
+        return x + val * torch.sigmoid(gate)
+        
 
 class GatedConvNet(nn.Module):
-    def __init__(self, c_in, height, width, c_hidden=32, c_out=-1, num_layers=4):
+    def __init__(self, c_in, h, w, c_hidden=32, c_out=-1, num_layers=4, use_attn=False):
         super().__init__()
         c_out = c_out if c_out > 0 else 2 * c_in
         layers = []
         layers += [nn.Conv2d(c_in, c_hidden, 3, padding=1)]
-        for _ in range(num_layers):
-            layers += [GatedConv(c_hidden, c_hidden),
-                       nn.LayerNorm([c_hidden, height, width])]
-        layers += [nn.Conv2d(c_hidden, c_out, 3, padding=1)]
+        for layer_index in range(num_layers):
+            if use_attn and layer_index%2==1:
+                layers += [GatedAttn(c_hidden)]
+            else:
+                layers += [GatedConv(c_hidden, c_hidden)]
+            layers += [LayerNormChannels(c_hidden)]
+        layers += [ConcatELU(),
+                   nn.Conv2d(2*c_hidden, c_out, 3, padding=1)]
         self.nn = nn.Sequential(*layers)
+        
+        self.nn[-1].weight.data.zero_()
+        self.nn[-1].bias.data.zero_()
     
     def forward(self, x):
         return self.nn(x)
-    
-class LinearNet(nn.Module):
-    def __init__(self, n_hidden=1024):
-        super().__init__()
-        self.nn = nn.Sequential(
-            nn.Linear(28*28, n_hidden),
-            nn.ReLU(),
-            nn.Linear(n_hidden, n_hidden),
-            nn.ReLU(),
-            nn.Linear(n_hidden, 28*28*2)
-        )
-        self.nn[-1].weight.data.zero_()
-        self.nn[-1].bias.data.zero_()
-        
-    def forward(self, x):
-        h, w = x.shape[2], x.shape[3]
-        out = self.nn(x.view(x.shape[0], -1))
-        return out.reshape(-1, 2, h, w)
-    
-class ConvEncDecNet(nn.Module):
-    def __init__(self, c_in, c_hidden=32):
-        super().__init__()
-        self.enc0 = nn.Sequential(
-            nn.Conv2d(c_in, c_hidden, 3, stride=1, padding=1),
-            nn.GELU()
-        )
-        self.enc1 = nn.Sequential(
-            nn.Conv2d(c_hidden, c_hidden, 3, stride=2, padding=1),
-            nn.GELU(),
-            nn.Conv2d(c_hidden, c_hidden, 3, stride=1, padding=1),
-            nn.GELU()
-        )
-        self.enc2 = nn.Sequential(
-            nn.Conv2d(c_hidden, c_hidden*2, 3, stride=2, padding=1),
-            nn.GELU(),
-            nn.Conv2d(c_hidden*2, c_hidden*2, 3, stride=1, padding=1),
-            nn.GELU()
-        )
-        self.dec2 = nn.Sequential(
-            nn.ConvTranspose2d(c_hidden*2, c_hidden, 3, stride=2, output_padding=1, padding=1),
-            nn.GELU()
-        )
-        self.dec1 = nn.Sequential(
-            nn.Conv2d(c_hidden*2, c_hidden, 1, stride=1, padding=0),
-            nn.GELU(),
-            nn.ConvTranspose2d(c_hidden, c_hidden, 3, stride=2, output_padding=1, padding=1),
-            nn.GELU()
-        )
-        self.dec0 = nn.Sequential(
-            nn.Conv2d(c_hidden*2, c_hidden, 1, stride=1, padding=0),
-            nn.GELU(),
-            nn.Conv2d(c_hidden, 2*c_in, 3, stride=1, padding=1)
-        )
-    
-    def forward(self, x):
-        x_enc0 = self.enc0(x)
-        x_enc1 = self.enc1(x_enc0)
-        x_enc2 = self.enc2(x_enc1)
-        x_dec2 = self.dec2(x_enc2)
-        x_dec1 = self.dec1(torch.cat([x_dec2, x_enc1], dim=1))
-        x_dec0 = self.dec0(torch.cat([x_dec1, x_enc0], dim=1))
-        return x_dec0
 
 
-# In[25]:
+# In[12]:
 
 
 def create_simple_flow(use_vardeq=True):
     set_seed(42)
     flow_layers = []
     if use_vardeq:
-        vardeq_layers = [CouplingLayer(network=ConvNet(c_in=2,c_out=2),
+        vardeq_layers = [CouplingLayer(network=GatedConvNet(c_in=2, c_out=2, h=28, w=28),
                                        mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
-                                       c_in=1) for i in range(1)]
+                                       c_in=1) for i in range(4)]
         flow_layers += [VariationalDequantization(var_flows=vardeq_layers)]
     else:
         flow_layers += [Dequantization()]
     for i in range(8):
-        flow_layers += [CouplingLayer(network=ConvNet(c_in=1),
+        flow_layers += [CouplingLayer(network=GatedConvNet(c_in=1, h=28, w=28),
                                       mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
                                       c_in=1)]
     flow_model = ImageFlow(flow_layers).to(device)
@@ -519,7 +510,7 @@ def create_simple_flow(use_vardeq=True):
 
 # ## Multi-scale architecture
 
-# In[26]:
+# In[13]:
 
 
 class SqueezeFlow(nn.Module):
@@ -537,19 +528,19 @@ class SqueezeFlow(nn.Module):
         return z, ldj
 
 
-# In[27]:
+# In[14]:
 
 
 sq_flow = SqueezeFlow()
 rand_img = torch.arange(16).view(1, 1, 4, 4)
-print("Image (before)", rand_img)
+print("Image (before)\n", rand_img)
 forward_img, _ = sq_flow(rand_img, ldj=None, reverse=False)
-print("Image (forward)", forward_img)
+print("Image (forward)\n", forward_img)
 reconst_img, _ = sq_flow(forward_img, ldj=None, reverse=True)
-print("Image (reverse)", reconst_img)
+print("Image (reverse)\n", reconst_img)
 
 
-# In[28]:
+# In[15]:
 
 
 class SplitFlow(nn.Module):
@@ -569,7 +560,7 @@ class SplitFlow(nn.Module):
         return z, ldj
 
 
-# In[29]:
+# In[16]:
 
 
 class Invertible1x1Conv(nn.Module):
@@ -594,7 +585,7 @@ class Invertible1x1Conv(nn.Module):
         return z, ldj
 
 
-# In[30]:
+# In[17]:
 
 
 class Invertible1x1ConvLU(nn.Module):
@@ -638,39 +629,38 @@ class Invertible1x1ConvLU(nn.Module):
         return z, ldj
 
 
-# In[31]:
+# In[113]:
 
 
 def create_multiscale_flow(use_vardeq=True, use_1x1_convs=True):
     set_seed(42)
     flow_layers = []
     if use_vardeq:
-        vardeq_layers = [CouplingLayer(network=ConvNet(c_in=2,c_out=2),
+        vardeq_layers = [CouplingLayer(network=GatedConvNet(c_in=2, c_out=2, h=28, w=28),
                                        mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
                                        c_in=1) for i in range(4)]
         flow_layers += [VariationalDequantization(vardeq_layers)]
     else:
         flow_layers += [Dequantization()]
     
-    flow_layers += [CouplingLayer(network=ConvNet(c_in=1),
+    flow_layers += [CouplingLayer(network=GatedConvNet(c_in=1, h=28, w=28),
                                   mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
                                   c_in=1) for i in range(2)]
     flow_layers += [SqueezeFlow()]
     for i in range(2):
         if use_1x1_convs:
             flow_layers += [Invertible1x1ConvLU(c_in=4)]
-        flow_layers += [CouplingLayer(network=ConvNet(c_in=4, c_hidden=48),
+        flow_layers += [CouplingLayer(network=GatedConvNet(c_in=4, c_hidden=48, h=14, w=14),
                                       mask=create_channel_mask(c_in=4, invert=(i%2==1)),
                                       c_in=4)]
     if use_1x1_convs:
         flow_layers += [Invertible1x1ConvLU(c_in=4)]
-    flow_layers += [Invertible1x1ConvLU(c_in=4),
-                    SplitFlow(),
+    flow_layers += [SplitFlow(),
                     SqueezeFlow()]
     for i in range(4):
         if use_1x1_convs:
             flow_layers += [Invertible1x1ConvLU(c_in=8)]
-        flow_layers += [CouplingLayer(network=ConvNet(c_in=8, c_hidden=64),
+        flow_layers += [CouplingLayer(network=GatedConvNet(c_in=8, c_hidden=64, h=7, w=7, use_attn=False),
                                       mask=create_channel_mask(c_in=8, invert=(i%2==1)),
                                       c_in=8)]
 
@@ -686,13 +676,27 @@ def create_multiscale_flow(use_vardeq=True, use_1x1_convs=True):
 
 
 
-# In[32]:
+# In[114]:
 
 
-# train_simple_flow(use_vardeq=False, model_name="MNISTFlow_simple")
-# train_simple_flow(use_vardeq=True, model_name="MNISTFlow_vardeq")
-# train_multiscale_flow(use_1x1_convs=False, model_name="MNISTFlow_multiscale")
-# train_multiscale_flow(use_1x1_convs=True, model_name="MNISTFlow_multiscale_1x1")
+def print_num_params(model):
+    num_params = sum([np.prod(p.shape) for p in model.parameters()])
+    print("Number of parameters: {:,}".format(num_params))
+
+print_num_params(create_simple_flow(use_vardeq=False))
+print_num_params(create_simple_flow(use_vardeq=True))
+print_num_params(create_multiscale_flow(use_1x1_convs=False))
+print_num_params(create_multiscale_flow(use_1x1_convs=True))
+
+
+# In[20]:
+
+
+# train_flow(create_simple_flow(use_vardeq=False), model_name="MNISTFlow_simple")
+# train_flow(create_simple_flow(use_vardeq=True), model_name="MNISTFlow_vardeq")
+# train_flow(create_multiscale_flow(use_1x1_convs=False), model_name="MNISTFlow_multiscale", sample_shape=[8,8,7,7])
+# train_flow(create_multiscale_flow(use_1x1_convs=True), model_name="MNISTFlow_multiscale_1x1_attn", sample_shape=[8,8,7,7])
+train_flow(create_multiscale_flow(use_1x1_convs=True), model_name="MNISTFlow_multiscale_1x1", sample_shape=[8,8,7,7])
 
 
 # flow_model_simple = create_simple_flow(use_vardeq=True)
@@ -706,89 +710,8 @@ def create_multiscale_flow(use_vardeq=True, use_1x1_convs=True):
 # samples = flow_model_multiscale.sample(img_shape=[16,8,7,7])
 # show_imgs(samples.cpu())
 
-# In[39]:
-
-
-def create_multiscale_flow3(use_vardeq=True, use_1x1_convs=True):
-    set_seed(42)
-    flow_layers = []
-    if use_vardeq:
-        vardeq_layers = [CouplingLayer(network=ConvNet(c_in=2,c_out=2),
-                                       mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
-                                       c_in=1) for i in range(4)]
-        flow_layers += [VariationalDequantization(vardeq_layers)]
-    else:
-        flow_layers += [Dequantization()]
-    
-    flow_layers += [CouplingLayer(network=ConvNet(c_in=1),
-                                  mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
-                                  c_in=1) for i in range(2)]
-    flow_layers += [SqueezeFlow()]
-    for i in range(4):
-        if use_1x1_convs:
-            flow_layers += [Invertible1x1ConvLU(c_in=4)]
-        flow_layers += [CouplingLayer(network=ConvNet(c_in=4, c_hidden=64),
-                                      mask=create_channel_mask(c_in=4, invert=(i%2==1)),
-                                      c_in=4)]
-    if use_1x1_convs:
-        flow_layers += [Invertible1x1ConvLU(c_in=4)]
-    flow_layers += [Invertible1x1ConvLU(c_in=4),
-                    SplitFlow(),
-                    SqueezeFlow()]
-    for i in range(6):
-        if use_1x1_convs:
-            flow_layers += [Invertible1x1ConvLU(c_in=8)]
-        flow_layers += [CouplingLayer(network=ConvNet(c_in=8, c_hidden=96),
-                                      mask=create_channel_mask(c_in=8, invert=(i%2==1)),
-                                      c_in=8)]
-
-
-    flow_model = ImageFlow(flow_layers).to(device)
-    return flow_model
-train_flow(create_multiscale_flow3(), sample_shape=[8,8,7,7], model_name="MNISTFlow_multiscale_deep")
-
-
-# In[47]:
-
-
-def create_multiscale_flow2(use_vardeq=True, use_1x1_convs=True):
-    set_seed(42)
-    flow_layers = []
-    if use_vardeq:
-        vardeq_layers = [CouplingLayer(network=GatedConvNet(c_in=2, c_out=2, height=28, width=28),
-                                       mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
-                                       c_in=1) for i in range(4)]
-        flow_layers += [VariationalDequantization(vardeq_layers)]
-    else:
-        flow_layers += [Dequantization()]
-    
-    flow_layers += [CouplingLayer(network=GatedConvNet(c_in=1, height=28, width=28),
-                                  mask=create_checkerboard_mask(h=28, w=28, invert=(i%2==1)),
-                                  c_in=1) for i in range(2)]
-    flow_layers += [SqueezeFlow()]
-    for i in range(2):
-        if use_1x1_convs:
-            flow_layers += [Invertible1x1ConvLU(c_in=4)]
-        flow_layers += [CouplingLayer(network=GatedConvNet(c_in=4, c_hidden=48, height=14, width=14),
-                                      mask=create_channel_mask(c_in=4, invert=(i%2==1)),
-                                      c_in=4)]
-    if use_1x1_convs:
-        flow_layers += [Invertible1x1ConvLU(c_in=4)]
-    flow_layers += [Invertible1x1ConvLU(c_in=4),
-                    SplitFlow(),
-                    SqueezeFlow()]
-    for i in range(4):
-        if use_1x1_convs:
-            flow_layers += [Invertible1x1ConvLU(c_in=8)]
-        flow_layers += [CouplingLayer(network=GatedConvNet(c_in=8, c_hidden=64, height=7, width=7),
-                                      mask=create_channel_mask(c_in=8, invert=(i%2==1)),
-                                      c_in=8)]
-
-
-    flow_model = ImageFlow(flow_layers).to(device)
-    return flow_model
-train_flow(create_multiscale_flow2(), sample_shape=[8,8,7,7], model_name="MNISTFlow_multiscale_gated")
-
+# ### Visualization of latents in different levels of multi-scale
+# Sample from higher level and show how images change or not
 
 # In[ ]:
 
