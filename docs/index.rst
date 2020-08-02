@@ -16,3 +16,4 @@ Welcome to notebook_test's documentation!
    tutorial4
    tutorial6
    tutorial9
+   tutorial10
