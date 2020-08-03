@@ -6,6 +6,19 @@
 Welcome to notebook_test's documentation!
 =========================================
 
+**Tutorials finished**
+
+- Tutorial 2.1: Activation functions
+
+**Tutorials in work**
+
+- Tutorial 9.2: Normalizing Flows on image modeling
+- Tutorial 10.1: Autoregressive Image Modeling (code needs commenting)
+
+**Tutorials left todo**
+
+All others
+
 .. toctree::
    :caption: Jupyter notebooks
    :maxdepth: 2
