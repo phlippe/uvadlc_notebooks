@@ -12,6 +12,7 @@ Welcome to notebook_test's documentation!
 
 **Tutorials in work**
 
+- Tutorial 8.1: Autoencoders
 - Tutorial 9.2: Normalizing Flows on image modeling
 - Tutorial 10.1: Autoregressive Image Modeling (code needs commenting)
 
@@ -28,5 +29,6 @@ All others
    tutorial3
    tutorial4
    tutorial6
+   tutorial8
    tutorial9
    tutorial10
