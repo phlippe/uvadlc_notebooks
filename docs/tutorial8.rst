@@ -3,4 +3,7 @@ Tutorial 8: Autoencoders
 ************************
 
 .. toctree::
-   tutorial_notebooks/tutorial8/AE_CIFAR10
+	:caption: Notebooks
+	:maxdepth: 2
+	
+	tutorial_notebooks/tutorial8/AE_CIFAR10

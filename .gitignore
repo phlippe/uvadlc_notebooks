@@ -3,3 +3,5 @@ docs/_build/
 docs/tutorial_notebooks/data
 docs/tutorial_notebooks/saved_models
 docs/tutorial_notebooks/.idea
+*.py
+*.png
