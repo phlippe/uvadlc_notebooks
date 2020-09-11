@@ -10,10 +10,10 @@ Welcome to notebook_test's documentation!
 
 - Tutorial 2.1: Activation functions
 - Tutorial 8.1: Autoencoders
+- Tutorial 9.2: Normalizing Flows on image modeling
 
 **Tutorials in work**
 
-- Tutorial 9.2: Normalizing Flows on image modeling (general explanation needed)
 - Tutorial 10.1: Autoregressive Image Modeling (code needs commenting)
 
 **Tutorials left todo**
