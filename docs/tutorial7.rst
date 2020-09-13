@@ -9,3 +9,5 @@ Some notebook showing how we can attack convnets with noise, and how we could ev
 .. toctree::
 	:caption: Notebooks
 	:maxdepth: 2
+
+	tutorial_notebooks/tutorial7/Adversarial_Attacks
