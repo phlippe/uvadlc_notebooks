@@ -5,3 +5,5 @@ docs/tutorial_notebooks/saved_models
 docs/tutorial_notebooks/.idea
 *.py
 *.png
+docs/tutorial_notebooks/tutorial8/tensorboard
+docs/tutorial_notebooks/tutorial9/*.py

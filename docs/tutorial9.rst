@@ -1,12 +1,9 @@
-*****************************
-Tutorial 9: Normalizing Flows
-*****************************
-
-Eventually remove the toy datasets. Or have it short.
+************************
+Tutorial 9: Autoencoders
+************************
 
 .. toctree::
 	:caption: Notebooks
 	:maxdepth: 2
-
-	tutorial_notebooks/tutorial9/NF_toy_datasets
-	tutorial_notebooks/tutorial9/NF_image_modeling
+	
+	tutorial_notebooks/tutorial8/AE_CIFAR10

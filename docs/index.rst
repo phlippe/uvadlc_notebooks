@@ -20,6 +20,23 @@ Welcome to notebook_test's documentation!
 
 All others
 
+**Lectures**
+
+- Lec 1: Introduction to Deep Learning + Tut 1: Intro to PyTorch
+- Lec 2: Modular Learning + Tut 2: Activation functions
+- Lec 3: Deep Learning Optimizations + Tut 3: Optimization and initialization
+- Lec 4: Convolutional Neural Networks
+- Lec 5: Modern ConvNets
+- Lec 6: Recurrent Neural Networks
+- Lec 7: Graph Neural Networks
+- Lec 8: Deep Generative Models + Tut 8: Deep Energy Models
+- Lec 9: Deep Variational Inference + Tut 9: Autoencoder
+- Lec 10: Generative Adversarial Networks + Tut 10: Adversarial Attacks
+- Lec 11: Advanced Generative Models + Tut 11: Normalizing Flows
+- Lec 12: Deep Stochastic Models + Tut 12: Autoregressive Image Modeling
+- Lec 13: Bayesian Deep Learning
+- Lec 14: Deep Dynamics
+
 .. toctree::
    :caption: Jupyter notebooks
    :maxdepth: 2
@@ -28,8 +45,13 @@ All others
    tutorial2
    tutorial3
    tutorial4
+   tutorial5
    tutorial6
    tutorial7
    tutorial8
    tutorial9
    tutorial10
+   tutorial11
+   tutorial12
+   tutorial13
+   tutorial14

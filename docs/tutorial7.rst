@@ -1,13 +1,13 @@
-***********************************
-Tutorial 7: Adversarial Attacks (?)
-***********************************
+****************************************
+Tutorial 7: Graph Neural Networks (TODO)
+****************************************
 
 **Notes**
 
-Some notebook showing how we can attack convnets with noise, and how we could eventually protect/improve. As we have coding a GAN in the assignment, we should not implement an own GAN but look for methods that do not use a discriminator (gradient-based).
+Simple link prediction and graph classification
 
 .. toctree::
 	:caption: Notebooks
 	:maxdepth: 2
-
-	tutorial_notebooks/tutorial7/Adversarial_Attacks
+	
+	tutorial_notebooks/tutorial4/Modern_ConvNets

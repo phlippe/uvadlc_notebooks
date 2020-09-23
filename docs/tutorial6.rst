@@ -1,8 +1,10 @@
-***********************************************
-Tutorial 6: Recurrent and Graph Neural Networks
-***********************************************
+********************************************
+Tutorial 6: Recurrent Neural Networks (TODO)
+********************************************
 
-As the assignment focuses on recurrent neural networks, we can maybe fully focus on graph neural networks here.
+**Note**
+
+Multi-head attention/transformer
 
 .. toctree::
 	:caption: Notebooks

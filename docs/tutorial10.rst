@@ -1,9 +1,10 @@
-**********************************
-Tutorial 10: Autoregressive Models
-**********************************
+********************************
+Tutorial 10: Adversarial Attacks
+********************************
+
 
 .. toctree::
 	:caption: Notebooks
 	:maxdepth: 2
-	
-	tutorial_notebooks/tutorial10/Autoregressive_Image_Modeling
+
+	tutorial_notebooks/tutorial7/Adversarial_Attacks
