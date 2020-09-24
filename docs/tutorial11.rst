@@ -8,5 +8,5 @@ Eventually remove the toy datasets. Or have it short.
 	:caption: Notebooks
 	:maxdepth: 2
 
-	tutorial_notebooks/tutorial9/NF_toy_datasets
-	tutorial_notebooks/tutorial9/NF_image_modeling
+	tutorial_notebooks/tutorial11/NF_toy_datasets
+	tutorial_notebooks/tutorial11/NF_image_modeling

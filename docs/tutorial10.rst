@@ -7,4 +7,4 @@ Tutorial 10: Adversarial Attacks
 	:caption: Notebooks
 	:maxdepth: 2
 
-	tutorial_notebooks/tutorial7/Adversarial_Attacks
+	tutorial_notebooks/tutorial10/Adversarial_Attacks

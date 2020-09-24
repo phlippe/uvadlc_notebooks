@@ -6,4 +6,4 @@ Tutorial 9: Autoencoders
 	:caption: Notebooks
 	:maxdepth: 2
 	
-	tutorial_notebooks/tutorial8/AE_CIFAR10
+	tutorial_notebooks/tutorial9/AE_CIFAR10

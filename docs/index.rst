@@ -9,12 +9,15 @@ Welcome to notebook_test's documentation!
 **Tutorials finished**
 
 - Tutorial 2.1: Activation functions
-- Tutorial 8.1: Autoencoders
-- Tutorial 9.2: Normalizing Flows on image modeling
+- Tutorial 9.1: Autoencoders
+- Tutorial 11.2: Normalizing Flows on image modeling
+- Tutorial 12.1: Autoregressive Image Modeling (code needs commenting)
 
 **Tutorials in work**
 
-- Tutorial 10.1: Autoregressive Image Modeling (code needs commenting)
+- Tutorial 3.1: Optimization and Initialization (commenting and few markdown cells)
+- Tutorial 8.1: Deep Energy Models (coding + experiments + commenting)
+- Tutorial 10.1: Adversarial attacks (draw story and commenting)
 
 **Tutorials left todo**
 
