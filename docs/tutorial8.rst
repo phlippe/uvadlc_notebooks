@@ -10,3 +10,4 @@ Short tutorial about Deep Energy Models for image modeling (MNIST)
 	:caption: Notebooks
 	:maxdepth: 2
 	
+	tutorial_notebooks/tutorial8/Deep_Energy_Models
