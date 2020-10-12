@@ -19,10 +19,14 @@ Welcome to notebook_test's documentation!
 - Tutorial 5.1: Inception, ResNet and DenseNet
 - Tutorial 8.1: Deep Energy Models (coding + experiments + commenting)
 - Tutorial 10.1: Adversarial attacks (draw story and commenting)
+- Tutorial 13.1: Bayesian Deep Learning (Christina)
 
-**Tutorials left todo**
+**Tutorials left todo (noone worked on yet)**
 
-All others
+- Tutorial 1.1+1.2: Introduction to PyTorch
+- Tutorial 6.1: RNNs and Attention
+- Tutorial 7.1: Graph Neural Networks
+- Tutorial 14.1: Deep Dynamics (eventually drop if more time is needed for answering questions)
 
 **Lectures**
 
@@ -31,8 +35,8 @@ All others
 - Lec 3: Deep Learning Optimizations + Tut 2: Activation functions
 - Lec 4: Convolutional Neural Networks + Tut 3: Optimization and initialization
 - Lec 5: Modern ConvNets + Tut 5: Inception, ResNet and DenseNet
-- Lec 6: Recurrent Neural Networks + Tut 6: Is attention all we need?
-- Lec 7: Graph Neural Networks + Tut 7: GNN classifiers
+- Lec 6: Recurrent Neural Networks
+- Lec 7: Graph Neural Networks
 - Lec 8: Deep Generative Models + Tut 8: Deep Energy Models
 - Lec 9: Deep Variational Inference + Tut 9: Autoencoder
 - Lec 10: Generative Adversarial Networks + Tut 10: Adversarial Attacks

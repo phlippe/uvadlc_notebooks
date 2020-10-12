@@ -1,8 +1,8 @@
-************************************************
-Tutorial 4: Convolutional Neural Networks (TODO)
-************************************************
+*****************************************
+Tutorial 4: Convolutional Neural Networks
+*****************************************
 
-Alternative: understanding and interpreting ConvNets. We can use simple methods to visualize/highlight areas the networks looks at particularly, or visualize feature maps.
+We are likely skipping this as the first session has to be about Lisa + introducing us, the TA session and assignment 1 (taking 2 hours)
 
 .. toctree::
 	:caption: Notebooks
