@@ -3,19 +3,78 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to notebook_test's documentation!
-=========================================
+Welcome to the UvA Deep Learning Tutorials!
+===========================================
+
+| *Course website*: https://uvadlc.github.io/
+| *Course edition*: Fall 2020 (Oct. 26 - Dec. 14)
+
+Prerequisites
+-------------
+
+- Install environment: _link_
+- Saved models: _link_
+
+How to run the notebooks
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Locally on CPU (no GPU required, we provide pre-trained models)
+- Google Colab
+- Lisa (eventually convert to script first: :code:`jupyter nbconvert --to script ...ipynb`)
+
+Tutorial-Lecture alignment
+--------------------------
+
+We will discuss 14 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
+
+- Lecture 1: Introduction to Deep Learning 
+   - Tutorial 1: Working with the Lisa cluster
+   - Tutorial 2: Introduction to PyTorch
+- Lecture 2: Modular Learning
+   - Tutorial 3: Activation functions
+- Lecture 3: Deep Learning Optimizations 
+   - Tutorial 4: Optimization and Initialization
+- Lecture 4: Convolutional Neural Networks
+- Lecture 5: Modern ConvNets
+   - Tutorial 5: Inception, ResNet and DenseNet
+- Lecture 6: Recurrent Neural Networks
+   - Tutorial 6: To be announced...
+- Lecture 7: Graph Neural Networks
+   - Tutorial 7: To be announced...
+- Lecture 8: Deep Generative Models
+   - Tutorial 8: Deep Energy Models
+- Lecture 9: Deep Variational Inference
+   - Tutorial 9: Autoencoder
+- Lecture 10: Generative Adversarial Networks
+   - Tutorial 10: Adversarial Attacks
+- Lecture 11: Advanced Generative Models
+   - Tutorial 11: Normalizing Flows
+   - Tutorial 12: Autoregressive Image Modeling
+- Lecture 12: Deep Stochastic Models
+- Lecture 13: Bayesian Deep Learning
+   - Tutorial 13: Bayesian Deep Learning
+- Lecture 14: Deep Dynamics
+   - Tutorial 14: To be announced...
+
+Feedback and Contribution
+-------------------------
+
+This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues can be included. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following link [ADD LINK] to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
+
+Current progress
+----------------
 
 **Tutorials finished**
 
-- Tutorial 2.1: Activation functions
-- Tutorial 3.1: Optimization and Initialization (conclusion and last part)
+- Tutorial 3.1: Activation functions
+- Tutorial 4.1: Optimization and Initialization (conclusion and last part)
 - Tutorial 9.1: Autoencoders
 - Tutorial 11.2: Normalizing Flows on image modeling
 - Tutorial 12.1: Autoregressive Image Modeling (code needs commenting)
 
 **Tutorials in work**
 
+- Tutorial 1.1: Working with the Lisa cluster
 - Tutorial 5.1: Inception, ResNet and DenseNet
 - Tutorial 8.1: Deep Energy Models (coding + experiments + commenting)
 - Tutorial 10.1: Adversarial attacks (draw story and commenting)
@@ -23,27 +82,11 @@ Welcome to notebook_test's documentation!
 
 **Tutorials left todo (noone worked on yet)**
 
-- Tutorial 1.1+1.2: Introduction to PyTorch
+- Tutorial 2.1+2.2: Introduction to PyTorch
 - Tutorial 6.1: RNNs and Attention
 - Tutorial 7.1: Graph Neural Networks
 - Tutorial 14.1: Deep Dynamics (eventually drop if more time is needed for answering questions)
 
-**Lectures**
-
-- Lec 1: Introduction to Deep Learning + Tut 0: Introduction to Lisa and discuss first assignment
-- Lec 2: Modular Learning + Tut 1: Intro to PyTorch
-- Lec 3: Deep Learning Optimizations + Tut 2: Activation functions
-- Lec 4: Convolutional Neural Networks + Tut 3: Optimization and initialization
-- Lec 5: Modern ConvNets + Tut 5: Inception, ResNet and DenseNet
-- Lec 6: Recurrent Neural Networks
-- Lec 7: Graph Neural Networks
-- Lec 8: Deep Generative Models + Tut 8: Deep Energy Models
-- Lec 9: Deep Variational Inference + Tut 9: Autoencoder
-- Lec 10: Generative Adversarial Networks + Tut 10: Adversarial Attacks
-- Lec 11: Advanced Generative Models + Tut 11: Normalizing Flows
-- Lec 12: Deep Stochastic Models + Tut 12: Autoregressive Image Modeling
-- Lec 13: Bayesian Deep Learning
-- Lec 14: Deep Dynamics
 
 .. toctree::
    :caption: Jupyter notebooks

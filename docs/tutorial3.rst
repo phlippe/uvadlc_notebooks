@@ -1,10 +1,9 @@
-*******************************************
-Tutorial 3: Optimization and Initialization
-*******************************************
-
+********************************
+Tutorial 3: Activation functions
+********************************
 
 .. toctree::
 	:caption: Notebooks
 	:maxdepth: 2
 	
-	tutorial_notebooks/tutorial3/Optimization_and_Initialization
+	tutorial_notebooks/tutorial3/Activation_Functions

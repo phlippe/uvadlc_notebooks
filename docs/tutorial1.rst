@@ -1,14 +1,21 @@
-***********************************
-Tutorial 1: Introduction to PyTorch
-***********************************
+*****************************************
+Tutorial 1: Working with the Lisa cluster
+*****************************************
 
-For the first part, I would take inspiration from the first two PyTorch tutorials: [What is PyTorch?](https://pytorch.org/tutorials/beginner/blitz/tensor_tutorial.html#sphx-glr-beginner-blitz-tensor-tutorial-py), [Autograd](https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html)
-
-For the second, we take a very simple NN, and go through the functions ourself
+We will give a short step-by-step what the students should do:
+- Load the correct modules
+- Install environment
+- Provide a job template file
+- Useful commands
+	- squeue
+	- scancel
+	- sinfo
+- Troubleshooting section
+	- Connection refused
+	- No slurm output file
 
 .. toctree::
 	:caption: Notebooks
 	:maxdepth: 2
-	
-	tutorial_notebooks/tutorial1/Introduction_to_PyTorch
-	tutorial_notebooks/tutorial1/Experimentation_and_Logging
+
+	tutorial_notebooks/tutorial1/Lisa_Cluster
