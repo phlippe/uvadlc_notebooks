@@ -103,7 +103,7 @@ Current progress
    :caption: Jupyter notebooks
    :maxdepth: 2
 
-   tutorial1
+   tutorial_notebooks/tutorial1/Lisa_Cluster
    tutorial2
    tutorial3
    tutorial4
