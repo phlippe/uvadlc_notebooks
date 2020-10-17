@@ -68,6 +68,7 @@ Current progress
 
 - Tutorial 3.1: Activation functions
 - Tutorial 4.1: Optimization and Initialization (conclusion and last part)
+- Tutorial 5.1: Inception, ResNet and DenseNet
 - Tutorial 9.1: Autoencoders
 - Tutorial 11.2: Normalizing Flows on image modeling
 - Tutorial 12.1: Autoregressive Image Modeling (code needs commenting)
@@ -75,7 +76,6 @@ Current progress
 **Tutorials in work**
 
 - Tutorial 1.1: Working with the Lisa cluster
-- Tutorial 5.1: Inception, ResNet and DenseNet
 - Tutorial 8.1: Deep Energy Models (coding + experiments + commenting)
 - Tutorial 10.1: Adversarial attacks (draw story and commenting)
 - Tutorial 13.1: Bayesian Deep Learning (Christina)
