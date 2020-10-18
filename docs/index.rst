@@ -105,15 +105,15 @@ Current progress
 
    tutorial_notebooks/tutorial1/Lisa_Cluster
    tutorial2
-   tutorial3
-   tutorial4
-   tutorial5
+   tutorial_notebooks/tutorial3/Activation_Functions
+   tutorial_notebooks/tutorial4/Optimization_and_Initialization
+   tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet
    tutorial6
    tutorial7
    tutorial8
-   tutorial9
+   tutorial_notebooks/tutorial9/AE_CIFAR10
    tutorial10
-   tutorial11
-   tutorial12
+   tutorial_notebooks/tutorial11/NF_image_modeling
+   tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
    tutorial13
    tutorial14
