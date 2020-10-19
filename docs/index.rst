@@ -24,7 +24,7 @@ Prerequisites
 -------------
 
 - Install environment: _link_
-- Saved models: _link_
+- Saved models: https://drive.google.com/drive/folders/1SevzqrkhHPAifKEHo-gi7J-dVxifvs4c?usp=sharing 
 
 How to run the notebooks
 ~~~~~~~~~~~~~~~~~~~~~~~~
