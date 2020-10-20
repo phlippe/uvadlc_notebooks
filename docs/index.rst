@@ -77,26 +77,26 @@ Current progress
 
 **Tutorials finished**
 
-- Tutorial 3.1: Activation functions
-- Tutorial 4.1: Optimization and Initialization (conclusion and last part)
-- Tutorial 5.1: Inception, ResNet and DenseNet
-- Tutorial 9.1: Autoencoders
-- Tutorial 11.2: Normalizing Flows on image modeling
-- Tutorial 12.1: Autoregressive Image Modeling (code needs commenting)
+- Tutorial 3: Activation functions
+- Tutorial 4: Optimization and Initialization (conclusion and last part)
+- Tutorial 5: Inception, ResNet and DenseNet
+- Tutorial 9: Autoencoders
+- Tutorial 11: Normalizing Flows on image modeling
+- Tutorial 12: Autoregressive Image Modeling (code needs commenting)
 
 **Tutorials in work**
 
-- Tutorial 1.1: Working with the Lisa cluster
-- Tutorial 8.1: Deep Energy Models (coding + experiments + commenting)
-- Tutorial 10.1: Adversarial attacks (draw story and commenting)
-- Tutorial 13.1: Bayesian Deep Learning (Christina)
+- Tutorial 1: Working with the Lisa cluster
+- Tutorial 2: Introduction to PyTorch
+- Tutorial 8: Deep Energy Models (coding + experiments + commenting)
+- Tutorial 10: Adversarial attacks (draw story and commenting)
+- Tutorial 13: Bayesian Deep Learning (Christina)
 
 **Tutorials left todo (noone worked on yet)**
 
-- Tutorial 2.1+2.2: Introduction to PyTorch
-- Tutorial 6.1: RNNs and Attention
-- Tutorial 7.1: Graph Neural Networks
-- Tutorial 14.1: Deep Dynamics (eventually drop if more time is needed for answering questions)
+- Tutorial 6: RNNs and Attention
+- Tutorial 7: Graph Neural Networks
+- Tutorial 14: Deep Dynamics (eventually drop if more time is needed for answering questions)
 
 
 .. toctree::
@@ -104,7 +104,7 @@ Current progress
    :maxdepth: 2
 
    tutorial_notebooks/tutorial1/Lisa_Cluster
-   tutorial2
+   tutorial_notebooks/tutorial2/Introduction_to_PyTorch
    tutorial_notebooks/tutorial3/Activation_Functions
    tutorial_notebooks/tutorial4/Optimization_and_Initialization
    tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet
