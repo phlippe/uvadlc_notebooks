@@ -22,7 +22,7 @@ copyright = '2020, Phillip Lippe'
 author = 'Phillip Lippe'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.1'
+release = 'v1.0'
 
 
 # -- General configuration ---------------------------------------------------
