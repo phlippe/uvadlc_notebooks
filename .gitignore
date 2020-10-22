@@ -7,3 +7,4 @@ docs/tutorial_notebooks/.idea
 *.png
 docs/tutorial_notebooks/tutorial9/tensorboard
 docs/tutorial_notebooks/tutorial11/*.py
+docs/tutorial_notebooks/tutorial2/*.tar
