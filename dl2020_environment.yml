@@ -19,7 +19,7 @@ dependencies:
   - cffi=1.14.3=py37he30daa8_0
   - chardet=3.0.4=py37he5f6b98_1008
   - cryptography=3.1.1=py37hff6837a_1
-  - cudatoolkit=10.2.89=hfd86e86_1
+  - cudatoolkit=10.1.243
   - decorator=4.4.2=py_0
   - defusedxml=0.6.0=py_0
   - entrypoints=0.3=py37hc8dfbb8_1002
@@ -85,7 +85,7 @@ dependencies:
   - python=3.7.9=h7579374_0
   - python-dateutil=2.8.1=py_0
   - python_abi=3.7=1_cp37m
-  - pytorch=1.6.0=py3.7_cuda10.2.89_cudnn7.6.5_0
+  - pytorch=1.6.0=py3.7_cuda10.1.243_cudnn7.6.3_0
   - pyzmq=19.0.2=py37hac76be4_2
   - readline=8.0=h7b6447c_0
   - requests=2.24.0=pyh9f0ad1d_0
@@ -96,7 +96,7 @@ dependencies:
   - terminado=0.9.1=py37hc8dfbb8_1
   - testpath=0.4.4=py_0
   - tk=8.6.10=hbc83047_0
-  - torchvision=0.7.0=py37_cu102
+  - torchvision=0.7.0=py37_cu101
   - tornado=6.0.4=py37h8f50634_2
   - traitlets=5.0.5=py_0
   - urllib3=1.25.11=py_0
@@ -148,4 +148,3 @@ dependencies:
     - tqdm==4.50.2
     - werkzeug==1.0.1
     - widgetsnbextension==3.5.1
-prefix: /home/phillip/anaconda3/envs/dl2020
