@@ -95,12 +95,12 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 Feedback and Contribution
 -------------------------
 
-This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues can be included. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following `link <https://docs.google.com/forms/d/e/1FAIpQLSeIhwrFSHlDSWGAgCN-RcTKm7Sn7P6bxzIyzIGge6xId1K8DQ/viewform?usp=sf_link>`_ to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
+This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues are expected. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following `link <https://docs.google.com/forms/d/e/1FAIpQLSeIhwrFSHlDSWGAgCN-RcTKm7Sn7P6bxzIyzIGge6xId1K8DQ/viewform?usp=sf_link>`_ to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
 
 Current progress
 ----------------
 
-Not all tutorials have been finished yet, and are still in the progress of being created. Below you can find an overview of the progress status. Each notebook has also a badge indicating its status (In progress, First version, Finished).
+Not all tutorials have been finished yet, and some are still in the progress of being created. Below you can find an overview of the progress status. Each notebook has also a badge indicating its status (In progress, First version, Finished).
 
 
 **Tutorials finished**
