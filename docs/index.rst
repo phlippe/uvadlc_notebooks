@@ -108,23 +108,23 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 1: Working with the Lisa cluster
 - Tutorial 2: Introduction to PyTorch
 - Tutorial 3: Activation functions
-- Tutorial 4: Optimization and Initialization (conclusion and last part)
+- Tutorial 4: Optimization and Initialization
 - Tutorial 5: Inception, ResNet and DenseNet
 - Tutorial 9: Autoencoders
 - Tutorial 11: Normalizing Flows on image modeling
-- Tutorial 12: Autoregressive Image Modeling (code needs commenting)
+- Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials in work**
 
-- Tutorial 8: Deep Energy Models (coding + experiments + commenting)
-- Tutorial 10: Adversarial attacks (draw story and commenting)
+- Tutorial 7: Graph Neural Networks
+- Tutorial 8: Deep Energy Models 
+- Tutorial 10: Adversarial attacks 
 - Tutorial 13: Bayesian Deep Learning (Christina)
 
 **Tutorials left todo**
 
 - Tutorial 6: RNNs and Attention
-- Tutorial 7: Graph Neural Networks
-- Tutorial 14: Deep Dynamics (eventually drop if more time is needed for answering questions)
+- Tutorial 14: Deep Dynamics
 
 
 .. toctree::

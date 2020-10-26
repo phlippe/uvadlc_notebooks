@@ -4,5 +4,10 @@ Tutorial 7: Graph Neural Networks
 
 **Notes**
 
-Simple link prediction and graph classification (?) Topics are not finally decided and up for discussion
-	
+In progress.
+
+.. toctree::
+   :caption: Jupyter notebooks
+   :maxdepth: 2
+
+   tutorial_notebooks/tutorial7/GNN_overview.ipynb
