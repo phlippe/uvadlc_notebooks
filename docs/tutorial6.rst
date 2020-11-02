@@ -1,7 +1,13 @@
-*************************************
-Tutorial 6: Recurrent Neural Networks
-*************************************
+*************************************************
+Tutorial 6: Transformers and Multi-head Attention
+*************************************************
 
 **Note**
 
-Topics are open and must be discussed with the TA group of the second assignment
+Currently in development. Will discuss the basic modules of the Transformer architecture, and discusses the wide ranging applications of the architecture beyond the commonly known recurrent tasks like language modeling.
+
+.. toctree::
+   :caption: Jupyter notebooks
+   :maxdepth: 2
+
+   tutorial_notebooks/tutorial6/Transformers_and_MHAttention
