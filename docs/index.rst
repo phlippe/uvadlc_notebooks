@@ -59,11 +59,11 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 6: Recurrent Neural Networks
 
-   - Tutorial 6: To be announced...
+   - Tutorial 6: Transformers and Multi-Head Attention
 
 - Lecture 7: Graph Neural Networks
 
-   - Tutorial 7: To be announced...
+   - Tutorial 7: Graph Neural Networks
 
 - Lecture 8: Deep Generative Models
 
@@ -116,6 +116,7 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 
 **Tutorials in work**
 
+- Tutorial 6: Transformers and Multi-Head Attention
 - Tutorial 7: Graph Neural Networks
 - Tutorial 8: Deep Energy Models 
 - Tutorial 10: Adversarial attacks 
@@ -123,7 +124,6 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 
 **Tutorials left todo**
 
-- Tutorial 6: RNNs and Attention
 - Tutorial 14: Deep Dynamics
 
 
