@@ -8,14 +8,15 @@ Welcome to the UvA Deep Learning Tutorials!
 
 | *Course website*: https://uvadlc.github.io/
 | *Course edition*: Fall 2020 (Oct. 26 - Dec. 14)
+| *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
 
 For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations. 
 We will visit various topics such as optimization techniques, graph neural networks and adversarial attacks (for a full list, see below).
 The notebooks are there to help you understand the material and teach you details of the PyTorch framework, including PyTorch Lightning. 
 
-The notebooks are presented in the first 30-45 minutes of each practical session.
+The notebooks are presented in the second hour of each lecture slot.
 We provide two versions for each notebook: a filled one, and one with blanks for some code parts. 
-During the tutorial sessions, we will present the content and do "live coding" by filling in the blanks with you.
+During the tutorial sessions, we will present the content and explain the implementation.
 You can decide yourself rather you just want to look at the filled notebook, want to try it yourself, or code along during the practical session.
 We do not have any mandatory assignments on which you would be graded or similarly. 
 However, we encourage you to get familiar with the notebooks and experiment or extend them yourself.
