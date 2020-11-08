@@ -21,6 +21,39 @@ You can decide yourself rather you just want to look at the filled notebook, wan
 We do not have any mandatory assignments on which you would be graded or similarly. 
 However, we encourage you to get familiar with the notebooks and experiment or extend them yourself.
 
+Schedule
+--------
+
++------------------------------------------+---------------------------------------------------+
+| **Date**                                 | **Notebook**                                      |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 29. October 2020, 13.00-14.00  | Tutorial 2: Introduction to PyTorch               |
++------------------------------------------+---------------------------------------------------+
+| Tuesday, 3. November 2020, 17.00-18.00   | Tutorial 3: Activation functions                  |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 5. November 2020, 12.00-13.00  | Tutorial 4: Optimization and Initialization       |
++------------------------------------------+---------------------------------------------------+
+| Tuesday, 10. November 2020, 14.00-15.00  | Tutorial 5: Inception, ResNet and DenseNet        |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 12. November 2020, 12.00-13.00 | Tutorial 6: Transformers and Multi-Head Attention |
++------------------------------------------+---------------------------------------------------+
+| Tuesday, 17. November 2020, 14.00-15.00  | Tutorial 7: Graph Neural Networks                 |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 19. November 2020, 12.00-13.00 | Tutorial 8: Deep Energy Models                    |
++------------------------------------------+---------------------------------------------------+
+| Tuesday, 24. November 2020, 14.00-15.00  | Tutorial 9: Autoencoders                          |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 26. November 2020, 12.00-13.00 | Tutorial 10: Adversarial Attacks                  |
++------------------------------------------+---------------------------------------------------+
+| Tuesday, 1. December 2020, 14.00-15.00   | Tutorial 11: Normalizing Flows                    |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 3. December 2020, 12.00-13.00  | Tutorial 12: Autoregressive Image Modeling        |
++------------------------------------------+---------------------------------------------------+
+| Tuesday, 8. November 2020, 14.00-15.00   | Tutorial 13: Bayesian Deep Learning               |
++------------------------------------------+---------------------------------------------------+
+| Thursday, 10. December 2020, 12.00-13.00 | Tutorial 14: To be announced...                   |
++------------------------------------------+---------------------------------------------------+
+
 How to run the notebooks
 ------------------------
 
@@ -93,6 +126,7 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
    - Tutorial 14: To be announced...
 
+
 Feedback and Contribution
 -------------------------
 
@@ -137,7 +171,7 @@ Not all tutorials have been finished yet, and some are still in the progress of 
    tutorial_notebooks/tutorial3/Activation_Functions
    tutorial_notebooks/tutorial4/Optimization_and_Initialization
    tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet
-   tutorial6
+   tutorial_notebooks/tutorial6/Transformers_and_MHAttention
    tutorial7
    tutorial8
    tutorial_notebooks/tutorial9/AE_CIFAR10
