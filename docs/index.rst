@@ -161,12 +161,17 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 
 - Tutorial 14: Deep Dynamics
 
+.. toctree::
+   :caption: Guides
+   :maxdepth: 2
+
+   tutorial_notebooks/tutorial1/Lisa_Cluster
+   tutorial_notebooks/guide2/Research_Projects
 
 .. toctree::
    :caption: Jupyter notebooks
    :maxdepth: 2
 
-   tutorial_notebooks/tutorial1/Lisa_Cluster
    tutorial_notebooks/tutorial2/Introduction_to_PyTorch
    tutorial_notebooks/tutorial3/Activation_Functions
    tutorial_notebooks/tutorial4/Optimization_and_Initialization
