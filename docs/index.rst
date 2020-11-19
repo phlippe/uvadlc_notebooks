@@ -37,21 +37,21 @@ Schedule
 +------------------------------------------+---------------------------------------------------+
 | Thursday, 12. November 2020, 12.00-13.00 | Tutorial 6: Transformers and Multi-Head Attention |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 17. November 2020, 14.00-15.00  | Tutorial 7: Graph Neural Networks                 |
+| Tuesday, 17. November 2020, 14.00-15.00  | Guide 2: Research projects with PyTorch           |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 19. November 2020, 12.00-13.00 | Tutorial 8: Deep Energy Models                    |
+| Thursday, 19. November 2020, 12.00-13.00 | Tutorial 7: Graph Neural Networks                 |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 24. November 2020, 14.00-15.00  | Tutorial 9: Autoencoders                          |
+| Tuesday, 24. November 2020, 14.00-15.00  | Tutorial 8: Deep Energy Models                    |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 26. November 2020, 12.00-13.00 | Tutorial 10: Adversarial Attacks                  |
+| Thursday, 26. November 2020, 12.00-13.00 | Tutorial 9: Autoencoders                          |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 1. December 2020, 14.00-15.00   | Tutorial 11: Normalizing Flows                    |
+| Tuesday, 1. December 2020, 14.00-15.00   | Tutorial 10: Adversarial Attacks                  |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 3. December 2020, 12.00-13.00  | Tutorial 12: Autoregressive Image Modeling        |
+| Thursday, 3. December 2020, 12.00-13.00  | Tutorial 11: Normalizing Flows                    |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 8. November 2020, 14.00-15.00   | Tutorial 13: Bayesian Deep Learning               |
+| Tuesday, 8. November 2020, 14.00-15.00   | Tutorial 12: Autoregressive Image Modeling        |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 10. December 2020, 12.00-13.00 | Tutorial 14: To be announced...                   |
+| Thursday, 10. December 2020, 12.00-13.00 | Tutorial 13: Bayesian Deep Learning               |
 +------------------------------------------+---------------------------------------------------+
 
 How to run the notebooks
@@ -124,8 +124,6 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 14: Deep Dynamics
 
-   - Tutorial 14: To be announced...
-
 
 Feedback and Contribution
 -------------------------
@@ -157,7 +155,7 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 10: Adversarial attacks 
 - Tutorial 13: Bayesian Deep Learning (Christina)
 
-**Tutorials left todo**
+**Tutorials skipped this year**
 
 - Tutorial 14: Deep Dynamics
 
@@ -184,4 +182,3 @@ Not all tutorials have been finished yet, and some are still in the progress of 
    tutorial_notebooks/tutorial11/NF_image_modeling
    tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
    tutorial13
-   tutorial14
