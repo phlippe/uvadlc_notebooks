@@ -165,6 +165,7 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 
    tutorial_notebooks/tutorial1/Lisa_Cluster
    tutorial_notebooks/guide2/Research_Projects
+   tutorial_notebooks/guide3/Debugging_PyTorch
 
 .. toctree::
    :caption: Jupyter notebooks
