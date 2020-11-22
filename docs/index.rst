@@ -176,8 +176,8 @@ Not all tutorials have been finished yet, and some are still in the progress of 
    tutorial_notebooks/tutorial4/Optimization_and_Initialization
    tutorial_notebooks/tutorial5/Inception_ResNet_DenseNet
    tutorial_notebooks/tutorial6/Transformers_and_MHAttention
-   tutorial_notebooks/tutorial7/GNN_overview.ipynb
-   tutorial8
+   tutorial_notebooks/tutorial7/GNN_overview
+   tutorial_notebooks/tutorial8/Deep_Energy_Models
    tutorial_notebooks/tutorial9/AE_CIFAR10
    tutorial10
    tutorial_notebooks/tutorial11/NF_image_modeling
