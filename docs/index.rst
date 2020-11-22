@@ -145,13 +145,13 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 5: Inception, ResNet and DenseNet
 - Tutorial 6: Transformers and Multi-Head Attention
 - Tutorial 7: Graph Neural Networks
+- Tutorial 8: Deep Energy Models
 - Tutorial 9: Autoencoders
 - Tutorial 11: Normalizing Flows on image modeling
 - Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials in work**
-
-- Tutorial 8: Deep Energy Models 
+ 
 - Tutorial 10: Adversarial attacks 
 - Tutorial 13: Bayesian Deep Learning (Christina)
 
