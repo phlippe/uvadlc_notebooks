@@ -179,7 +179,7 @@ Not all tutorials have been finished yet, and some are still in the progress of 
    tutorial_notebooks/tutorial7/GNN_overview
    tutorial_notebooks/tutorial8/Deep_Energy_Models
    tutorial_notebooks/tutorial9/AE_CIFAR10
-   tutorial10
+   tutorial_notebooks/tutorial10/Adversarial_Attacks
    tutorial_notebooks/tutorial11/NF_image_modeling
    tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
    tutorial13
