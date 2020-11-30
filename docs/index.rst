@@ -105,7 +105,7 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 9: Deep Variational Inference
 
-   - Tutorial 9: Autoencoder
+   - Tutorial 9: Deep Autoencoders
 
 - Lecture 10: Generative Adversarial Networks
 
@@ -147,13 +147,13 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 7: Graph Neural Networks
 - Tutorial 8: Deep Energy Models
 - Tutorial 9: Autoencoders
+- Tutorial 10: Adversarial attacks 
 - Tutorial 11: Normalizing Flows on image modeling
 - Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials in work**
  
-- Tutorial 10: Adversarial attacks 
-- Tutorial 13: Bayesian Deep Learning (Christina)
+- Tutorial 13: Bayesian Deep Learning (currently unassigned, might be skipped)
 
 **Tutorials skipped this year**
 
