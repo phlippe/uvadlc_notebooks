@@ -47,11 +47,9 @@ Schedule
 +------------------------------------------+---------------------------------------------------+
 | Tuesday, 1. December 2020, 14.00-15.00   | Tutorial 10: Adversarial Attacks                  |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 3. December 2020, 12.00-13.00  | Tutorial 11: Normalizing Flows                    |
+| Tuesday, 8. November 2020, 14.00-15.00   | Tutorial 11: Normalizing Flows                    |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 8. November 2020, 14.00-15.00   | Tutorial 12: Autoregressive Image Modeling        |
-+------------------------------------------+---------------------------------------------------+
-| Thursday, 10. December 2020, 12.00-13.00 | Tutorial 13: Bayesian Deep Learning               |
+| Thursday, 10. December 2020, 12.00-13.00 | Tutorial 12: Autoregressive Image Modeling        |
 +------------------------------------------+---------------------------------------------------+
 
 How to run the notebooks
@@ -120,8 +118,6 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 13: Bayesian Deep Learning
 
-   - Tutorial 13: Bayesian Deep Learning
-
 - Lecture 14: Deep Dynamics
 
 
@@ -148,15 +144,15 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 8: Deep Energy Models
 - Tutorial 9: Autoencoders
 - Tutorial 10: Adversarial attacks 
-- Tutorial 11: Normalizing Flows on image modeling
-- Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials in work**
  
-- Tutorial 13: Bayesian Deep Learning (currently unassigned, might be skipped)
+- Tutorial 11: Normalizing Flows on image modeling
+- Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials skipped this year**
 
+- Tutorial 13: Bayesian Deep Learning
 - Tutorial 14: Deep Dynamics
 
 .. toctree::
@@ -182,4 +178,3 @@ Not all tutorials have been finished yet, and some are still in the progress of 
    tutorial_notebooks/tutorial10/Adversarial_Attacks
    tutorial_notebooks/tutorial11/NF_image_modeling
    tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
-   tutorial13
