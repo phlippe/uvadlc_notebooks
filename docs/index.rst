@@ -7,7 +7,7 @@ Welcome to the UvA Deep Learning Tutorials!
 ===========================================
 
 | *Course website*: https://uvadlc.github.io/
-| *Course edition*: Fall 2020 (Oct. 26 - Dec. 14)
+| *Course edition*: Fall 2020 (Oct. 26 - Dec. 20)
 | *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
 | *Author*: Phillip Lippe
 
@@ -16,8 +16,7 @@ We will visit various topics such as optimization techniques, graph neural netwo
 The notebooks are there to help you understand the material and teach you details of the PyTorch framework, including PyTorch Lightning. 
 
 The notebooks are presented in the second hour of each lecture slot.
-We provide two versions for each notebook: a filled one, and one with blanks for some code parts. 
-During the tutorial sessions, we will present the content and explain the implementation.
+During the tutorial sessions, we will present the content and explain the implementation of the notebooks.
 You can decide yourself rather you just want to look at the filled notebook, want to try it yourself, or code along during the practical session.
 We do not have any mandatory assignments on which you would be graded or similarly. 
 However, we encourage you to get familiar with the notebooks and experiment or extend them yourself.
