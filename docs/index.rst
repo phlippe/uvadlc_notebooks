@@ -69,7 +69,7 @@ On this website, you will find the notebooks exported into a HTML format so that
 Tutorial-Lecture alignment
 --------------------------
 
-We will discuss 14 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
+We will discuss 12 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
 
 - Lecture 1: Introduction to Deep Learning
 
