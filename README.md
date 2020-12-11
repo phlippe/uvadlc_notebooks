@@ -5,7 +5,7 @@ UvA Deep Learning Tutorials
 
 *Course website*: https://uvadlc.github.io/<br>
 *Course edition*: Fall 2020 (Oct. 26 - Dec. 14)</br>
-*Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)
+*Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)</br>
 *Author*: Phillip Lippe
 
 For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations. 
