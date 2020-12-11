@@ -4,15 +4,16 @@ UvA Deep Learning Tutorials
 *Note: To look at the notebooks in a nicer format, visit our RTD website: https://uvadlc-notebooks.readthedocs.io/en/latest/*
 
 *Course website*: https://uvadlc.github.io/<br>
-*Course edition*: Fall 2020 (Oct. 26 - Dec. 14)
+*Course edition*: Fall 2020 (Oct. 26 - Dec. 14)</br>
+*Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)
+*Author*: Phillip Lippe
 
 For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations. 
-We will visit various topics such as optimization techniques, graph neural networks and adversarial attacks (for a full list, see below).
+We will visit various topics such as optimization techniques, graph neural networks, adversarial attacks and normalizing flows (for a full list, see below).
 The notebooks are there to help you understand the material and teach you details of the PyTorch framework, including PyTorch Lightning. 
 
-The notebooks are presented in the first 30-45 minutes of each practical session.
-We provide two versions for each notebook: a filled one, and one with blanks for some code parts. 
-During the tutorial sessions, we will present the content and do "live coding" by filling in the blanks with you.
+The notebooks are presented in the second hour of each lecture slot.
+During the tutorial sessions, we will present the content and explain the implementation of the notebooks.
 You can decide yourself rather you just want to look at the filled notebook, want to try it yourself, or code along during the practical session.
 We do not have any mandatory assignments on which you would be graded or similarly. 
 However, we encourage you to get familiar with the notebooks and experiment or extend them yourself.
@@ -33,11 +34,11 @@ On this website, you will find the notebooks exported into a HTML format so that
 Tutorial-Lecture alignment
 --------------------------
 
-We will discuss 14 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
+We will discuss 12 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
 
 - Lecture 1: Introduction to Deep Learning
 
-   - Tutorial 1: Working with the Lisa cluster
+   - Guide 1: Working with the Lisa cluster
    - Tutorial 2: Introduction to PyTorch
 
 - Lecture 2: Modular Learning
@@ -55,11 +56,11 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 6: Recurrent Neural Networks
 
-   - Tutorial 6: To be announced...
+   - Tutorial 6: Transformers and Multi-Head Attention
 
 - Lecture 7: Graph Neural Networks
 
-   - Tutorial 7: To be announced...
+   - Tutorial 7: Graph Neural Networks
 
 - Lecture 8: Deep Generative Models
 
@@ -67,7 +68,7 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 9: Deep Variational Inference
 
-   - Tutorial 9: Autoencoder
+   - Tutorial 9: Deep Autoencoders
 
 - Lecture 10: Generative Adversarial Networks
 
@@ -82,13 +83,10 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 13: Bayesian Deep Learning
 
-   - Tutorial 13: Bayesian Deep Learning
-
 - Lecture 14: Deep Dynamics
 
-   - Tutorial 14: To be announced...
 
-Feedback and Contribution
--------------------------
+Feedback, Questions or Contributions
+------------------------------------
 
 This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues are expected. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following [link](https://docs.google.com/forms/d/e/1FAIpQLSeIhwrFSHlDSWGAgCN-RcTKm7Sn7P6bxzIyzIGge6xId1K8DQ/viewform?usp=sf_link) to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
