@@ -73,7 +73,7 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 
 - Lecture 1: Introduction to Deep Learning
 
-   - Tutorial 1: Working with the Lisa cluster
+   - Guide 1: Working with the Lisa cluster
    - Tutorial 2: Introduction to PyTorch
 
 - Lecture 2: Modular Learning
