@@ -9,6 +9,7 @@ Welcome to the UvA Deep Learning Tutorials!
 | *Course website*: https://uvadlc.github.io/
 | *Course edition*: Fall 2020 (Oct. 26 - Dec. 14)
 | *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
+| *Author*: Phillip Lippe
 
 For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations. 
 We will visit various topics such as optimization techniques, graph neural networks and adversarial attacks (for a full list, see below).
@@ -121,8 +122,8 @@ We will discuss 14 tutorials in total, each focusing on a different aspect of De
 - Lecture 14: Deep Dynamics
 
 
-Feedback and Contribution
--------------------------
+Feedback, Questions or Contributions
+------------------------------------
 
 This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues are expected. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following `link <https://docs.google.com/forms/d/e/1FAIpQLSeIhwrFSHlDSWGAgCN-RcTKm7Sn7P6bxzIyzIGge6xId1K8DQ/viewform?usp=sf_link>`_ to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
 
@@ -144,11 +145,11 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 8: Deep Energy Models
 - Tutorial 9: Autoencoders
 - Tutorial 10: Adversarial attacks 
+- Tutorial 11: Normalizing Flows on image modeling
+- Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials in work**
  
-- Tutorial 11: Normalizing Flows on image modeling
-- Tutorial 12: Autoregressive Image Modeling
 
 **Tutorials skipped this year**
 
