@@ -1,0 +1,2 @@
+docs/tutorial_notebooks/tutorial*/*.ipynb linguist-documentation=false
+*.ipynb linguist-detectable=true

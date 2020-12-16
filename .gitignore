@@ -4,7 +4,6 @@ docs/tutorial_notebooks/data
 docs/tutorial_notebooks/saved_models
 docs/tutorial_notebooks/.idea
 *.py
-*.png
 docs/tutorial_notebooks/tutorial9/tensorboard
 docs/tutorial_notebooks/tutorial11/*.py
 docs/tutorial_notebooks/tutorial2/*.tar
