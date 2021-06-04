@@ -18,11 +18,11 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'UvA DL Notebooks'
-copyright = '2020, Phillip Lippe'
+copyright = '2021, Phillip Lippe'
 author = 'Phillip Lippe'
 
 # The full version, including alpha/beta/rc tags
-release = 'v1.0'
+release = 'v1.1'
 
 
 # -- General configuration ---------------------------------------------------
