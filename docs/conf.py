@@ -33,7 +33,8 @@ release = 'v1.1'
 extensions = [
 	'nbsphinx',
 	'sphinx.ext.mathjax',
-	'sphinx_rtd_theme'
+	'sphinx_rtd_theme',
+    'sphinx_gallery.load_style',  # load CSS for gallery (needs SG >= 0.6)
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -64,4 +65,4 @@ nbsphinx_execute_arguments = [
     "--InlineBackend.figure_formats={'svg', 'pdf'}",
     "--InlineBackend.rc={'figure.dpi': 96}",
 ]
-pygments_style = 'sphinx'
+# pygments_style = 'sphinx'
