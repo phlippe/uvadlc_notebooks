@@ -178,3 +178,4 @@ Not all tutorials have been finished yet, and some are still in the progress of 
    tutorial_notebooks/tutorial10/Adversarial_Attacks
    tutorial_notebooks/tutorial11/NF_image_modeling
    tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
+   tutorial_notebooks/tutorial15/Vision_Transformer
