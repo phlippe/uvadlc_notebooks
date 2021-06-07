@@ -155,6 +155,10 @@ Not all tutorials have been finished yet, and some are still in the progress of 
 - Tutorial 13: Bayesian Deep Learning
 - Tutorial 14: Deep Dynamics
 
+**Additional new tutorials**
+
+- Tutorial 15: Vision Transformers
+
 .. toctree::
    :caption: Guides
    :maxdepth: 2
