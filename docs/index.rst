@@ -7,7 +7,8 @@ Welcome to the UvA Deep Learning Tutorials!
 ===========================================
 
 | *Course website*: https://uvadlc.github.io/
-| *Course edition*: Fall 2020 (Oct. 26 - Dec. 20)
+| *Course edition*: Fall 2020 (Oct. 26 - Dec. 20) - Being kept up to date
+| *Repository*: https://github.com/phlippe/uvadlc_notebooks
 | *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
 | *Author*: Phillip Lippe
 
@@ -69,7 +70,7 @@ On this website, you will find the notebooks exported into a HTML format so that
 Tutorial-Lecture alignment
 --------------------------
 
-We will discuss 12 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
+We will discuss 12 tutorials in the course, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
 
 - Lecture 1: Introduction to Deep Learning
 
@@ -129,7 +130,7 @@ This is the first time we present these tutorials during the Deep Learning cours
 Current progress
 ----------------
 
-Not all tutorials have been finished yet, and some are still in the progress of being created. Below you can find an overview of the progress status. Each notebook has also a badge indicating its status (In progress, First version, Finished).
+Below you can find an overview of the progress status. Each notebook has also a badge indicating its status (In progress, First version, Finished).
 
 
 **Tutorials finished**
