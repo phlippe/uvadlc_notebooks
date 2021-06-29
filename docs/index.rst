@@ -159,6 +159,7 @@ Below you can find an overview of the progress status. Each notebook has also a 
 **Additional new tutorials**
 
 - Tutorial 15: Vision Transformers
+- Tutorial 16: Meta Learning - Learning to Learn
 
 .. toctree::
    :caption: Guides
@@ -184,3 +185,4 @@ Below you can find an overview of the progress status. Each notebook has also a 
    tutorial_notebooks/tutorial11/NF_image_modeling
    tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
    tutorial_notebooks/tutorial15/Vision_Transformer
+   tutorial_notebooks/tutorial16/Meta_Learning
