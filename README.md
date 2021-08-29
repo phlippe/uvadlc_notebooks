@@ -4,7 +4,7 @@ UvA Deep Learning Tutorials
 *Note: To look at the notebooks in a nicer format, visit our RTD website: https://uvadlc-notebooks.readthedocs.io/en/latest/*
 
 *Course website*: https://uvadlc.github.io/<br>
-*Course edition*: Fall 2020 (Oct. 26 - Dec. 14)</br>
+*Course edition*: Fall 2020 (Oct. 26 - Dec. 14) - Being kept up to date</br>
 *Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)</br>
 *Author*: Phillip Lippe
 
@@ -34,7 +34,7 @@ On this website, you will find the notebooks exported into a HTML format so that
 Tutorial-Lecture alignment
 --------------------------
 
-We will discuss 12 tutorials in total, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
+We will discuss 12 tutorials in the course, each focusing on a different aspect of Deep Learning. The tutorials are spread across lectures, and we tried to cover something from every area. You can align the tutorials with the lectures as follows:
 
 - Lecture 1: Introduction to Deep Learning
 
@@ -84,6 +84,12 @@ We will discuss 12 tutorials in total, each focusing on a different aspect of De
 - Lecture 13: Bayesian Deep Learning
 
 - Lecture 14: Deep Dynamics
+
+*Additional notebooks*:
+
+- Tutorial 15: Vision Transformers
+- Tutorial 16: Meta-Learning - Learning to Learn
+- Tutorial 17: Self-Supervised Contrastive Learning with SimCLR
 
 
 Feedback, Questions or Contributions

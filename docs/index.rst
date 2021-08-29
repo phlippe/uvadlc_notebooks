@@ -121,6 +121,12 @@ We will discuss 12 tutorials in the course, each focusing on a different aspect 
 
 - Lecture 14: Deep Dynamics
 
+*Additional notebooks*:
+
+- Tutorial 15: Vision Transformers
+- Tutorial 16: Meta-Learning - Learning to Learn
+- Tutorial 17: Self-Supervised Contrastive Learning with SimCLR
+
 
 Feedback, Questions or Contributions
 ------------------------------------
@@ -160,6 +166,7 @@ Below you can find an overview of the progress status. Each notebook has also a 
 
 - Tutorial 15: Vision Transformers
 - Tutorial 16: Meta Learning - Learning to Learn
+- Tutorial 17: Self-Supervised Contrastive Learning with SimCLR
 
 .. toctree::
    :caption: Guides
@@ -186,3 +193,4 @@ Below you can find an overview of the progress status. Each notebook has also a 
    tutorial_notebooks/tutorial12/Autoregressive_Image_Modeling
    tutorial_notebooks/tutorial15/Vision_Transformer
    tutorial_notebooks/tutorial16/Meta_Learning
+   tutorial_notebooks/tutorial17/SimCLR
