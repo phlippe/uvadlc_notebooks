@@ -8,3 +8,4 @@ docs/tutorial_notebooks/tutorial9/tensorboard
 docs/tutorial_notebooks/tutorial11/*.py
 docs/tutorial_notebooks/tutorial2/*.tar
 docs/test_build.sh
+.DS_Store
