@@ -41,9 +41,9 @@ Schedule
 +------------------------------------------+---------------------------------------------------+
 | Tuesday, 10. November 2020, 14.00-15.00  | Tutorial 5: Inception, ResNet and DenseNet        |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 12. November 2020, 12.00-13.00 | Tutorial 6: Transformers and Multi-Head Attention |
+| Thursday, 12. November 2020, 12.00-13.00 | Tutorial 7: Graph Neural Networks                 |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 19. November 2020, 12.00-13.00 | Tutorial 7: Graph Neural Networks                 |
+| Thursday, 19. November 2020, 12.00-13.00 | Tutorial 6: Transformers and Multi-Head Attention |
 +------------------------------------------+---------------------------------------------------+
 | Thursday, 26. November 2020, 12.00-13.00 | Tutorial 9: Autoencoders                          |
 +------------------------------------------+---------------------------------------------------+
