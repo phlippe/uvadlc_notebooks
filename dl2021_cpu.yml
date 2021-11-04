@@ -16,3 +16,8 @@ dependencies:
     - tabulate==0.8.9
     - tqdm==4.62.3
     - pillow==8.0.1
+    - notebook==6.4.5
+    - jupyterlab==3.2.1
+    - matplotlib==3.4.3
+    - seaborn==0.11.2
+    - ipywidgets==7.6.5
