@@ -20,3 +20,4 @@ dependencies:
     - jupyterlab==3.2.1
     - matplotlib==3.4.3
     - seaborn==0.11.2
+    - ipywidgets==7.6.5
