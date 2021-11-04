@@ -16,3 +16,5 @@ dependencies:
     - tabulate==0.8.9
     - tqdm==4.62.3
     - pillow==8.0.1
+    - notebook==6.4.5
+    - jupyterlab==3.2.1
