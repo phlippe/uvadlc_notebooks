@@ -18,3 +18,4 @@ dependencies:
     - pillow==8.0.1
     - notebook==6.4.5
     - jupyterlab==3.2.1
+    - matplotlib==3.4.3
