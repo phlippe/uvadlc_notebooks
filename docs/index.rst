@@ -32,20 +32,20 @@ Schedule
 +------------------------------------------+---------------------------------------------------+
 | **Date**                                 | **Notebook**                                      |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 29. October 2020, 13.00-14.00  | Tutorial 2: Introduction to PyTorch               |
+| Thursday, 4. November 2021, 13.00-15.00  | Tutorial 2: Introduction to PyTorch               |
 |                                          | Guide 1: Working with the Lisa cluster            |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 3. November 2020, 17.00-18.00   | Tutorial 3: Activation functions                  |
+| Thursday, 11. November 2021, 13.00-14.00 | Tutorial 3: Activation functions                  |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 5. November 2020, 12.00-13.00  | Tutorial 4: Optimization and Initialization       |
+| Thursday, 18. November 2021, 13.00-14.00 | Tutorial 4: Optimization and Initialization       |
 +------------------------------------------+---------------------------------------------------+
-| Tuesday, 10. November 2020, 14.00-15.00  | Tutorial 5: Inception, ResNet and DenseNet        |
+| Thursday, 25. November 2021, 13.00-14.00 | Tutorial 5: Inception, ResNet and DenseNet        |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 12. November 2020, 12.00-13.00 | Tutorial 7: Graph Neural Networks                 |
+| Thursday, 2. December 2020, 13.00-14.00  | Tutorial 7: Graph Neural Networks                 |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 19. November 2020, 12.00-13.00 | Tutorial 6: Transformers and Multi-Head Attention |
+| Thursday, 9. December 2020, 13.00-14.00  | Tutorial 6: Transformers and Multi-Head Attention |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 26. November 2020, 12.00-13.00 | Tutorial 9: Autoencoders                          |
+| Thursday, 16. December 2020, 13.00-14.00 | Tutorial 9: Deep Autoencoders                     |
 +------------------------------------------+---------------------------------------------------+
 
 How to run the notebooks
