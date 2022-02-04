@@ -1,0 +1,23 @@
+name: dl2021
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.7
+  - pip=21.2.4
+  - cpuonly=2.0
+  - pytorch=1.10.0
+  - torchvision=0.11.1
+  - torchaudio=0.10.0
+  - pip:
+    - pytorch-lightning==1.4.9
+    - tensorboard==2.7.0
+    - tabulate==0.8.9
+    - tqdm==4.62.3
+    - pillow==8.0.1
+    - notebook==6.4.5
+    - jupyterlab==3.2.1
+    - matplotlib==3.4.3
+    - seaborn==0.11.2
+    - ipywidgets==7.6.5
