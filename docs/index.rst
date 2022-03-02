@@ -100,7 +100,7 @@ This is the first time we present these tutorials during the Deep Learning cours
    tutorial_notebooks/guide3/Debugging_PyTorch
 
 .. toctree::
-   :caption: Jupyter notebooks
+   :caption: Deep Learning 1
    :maxdepth: 2
 
    tutorial_notebooks/tutorial2/Introduction_to_PyTorch
@@ -117,3 +117,9 @@ This is the first time we present these tutorials during the Deep Learning cours
    tutorial_notebooks/tutorial15/Vision_Transformer
    tutorial_notebooks/tutorial16/Meta_Learning
    tutorial_notebooks/tutorial17/SimCLR
+
+.. toctree::
+   :caption: Deep Learning 2
+   :maxdepth: 2
+
+   

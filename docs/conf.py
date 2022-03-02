@@ -18,7 +18,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'UvA DL Notebooks'
-copyright = '2021, Phillip Lippe'
+copyright = '2022, Phillip Lippe'
 author = 'Phillip Lippe'
 
 # The full version, including alpha/beta/rc tags
