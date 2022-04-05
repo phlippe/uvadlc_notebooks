@@ -8,5 +8,6 @@ docs/tutorial_notebooks/tutorial9/tensorboard
 docs/tutorial_notebooks/tutorial11/*.py
 docs/tutorial_notebooks/tutorial2/*.tar
 docs/tutorial_notebooks/tutorial2/runs/
+docs/tutorial_notebooks/DL2/deep_probabilistic_models_I/blog-authorship.json
 docs/test_build.sh
 .DS_Store
