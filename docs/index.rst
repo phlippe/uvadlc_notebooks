@@ -7,7 +7,7 @@ Welcome to the UvA Deep Learning Tutorials!
 ===========================================
 
 | *Course website*: https://uvadlc.github.io/
-| *Course edition*: Fall 2021 (Nov. 01 - Dec. 24) - Being kept up to date
+| *Course edition*: DL1 - Fall 2021, DL2 - Spring 2022, Being kept up to date
 | *Repository*: https://github.com/phlippe/uvadlc_notebooks
 | *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
 | *Author*: Phillip Lippe
@@ -16,7 +16,7 @@ For this year's course edition, we created a series of Jupyter notebooks that ar
 We will visit various topics such as optimization techniques, transformers, graph neural networks, and more (for a full list, see below).
 The notebooks are there to help you understand the material and teach you details of the PyTorch framework, including PyTorch Lightning. 
 
-The notebooks are presented in the first hour of every Thursday's tutorial session.
+The notebooks are presented in the first hour of every group tutorial session.
 During the tutorial sessions, we will present the content and explain the implementation of the notebooks.
 You can decide yourself whether you just want to look at the filled notebook, want to try it yourself, or code along during the practical session.
 The notebooks are not directly part of any mandatory assignments on which you would be graded or similarly. 
@@ -26,8 +26,8 @@ Further, the content presented will be relevant for the graded assignment and ex
 The tutorials have been integrated as official tutorials of PyTorch Lightning.
 Thus, you can also view them in `their documentation <https://pytorch-lightning.readthedocs.io/en/latest/>`_.
 
-Schedule
---------
+Schedule (Deep Learning 1)
+--------------------------
 
 +------------------------------------------+---------------------------------------------------+
 | **Date**                                 | **Notebook**                                      |
@@ -66,7 +66,7 @@ However, we suggest that you also give them a try and run them yourself. There a
 Tutorial-Lecture alignment
 --------------------------
 
-We will discuss 7 of the tutorials in the course, spread across lectures to cover something from every area. You can align the tutorials with the lectures based on their topics. The list of tutorials is:
+We will discuss 7 of the tutorials in the course, spread across lectures to cover something from every area. You can align the tutorials with the lectures based on their topics. The list of tutorials in the Deep Learning 1 course is:
 
 - Guide 1: Working with the Lisa cluster
 - Tutorial 2: Introduction to PyTorch
@@ -121,6 +121,5 @@ This is the first time we present these tutorials during the Deep Learning cours
 .. toctree::
    :caption: Deep Learning 2
    :maxdepth: 2
-   
-   tutorial_notebooks/DL2/Geometric_deep_learning
-   
+
+   tutorial_notebooks/DL2/Geometric_deep_learning/tutorial1_regular_group_convolutions
