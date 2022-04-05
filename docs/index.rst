@@ -122,4 +122,7 @@ This is the first time we present these tutorials during the Deep Learning cours
    :caption: Deep Learning 2
    :maxdepth: 2
 
+   tutorial_notebooks/DL2/Geometric_deep_learning/tutorial2_steerable_cnns
+
+
    
