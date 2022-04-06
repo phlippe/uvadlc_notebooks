@@ -123,4 +123,5 @@ This is the first time we present these tutorials during the Deep Learning cours
    :maxdepth: 2
 
    tutorial_notebooks/DL2/Geometric_deep_learning/tutorial1_regular_group_convolutions
+   tutorial_notebooks/DL2/Geometric_deep_learning/tutorial2_steerable_cnns
    tutorial_notebooks/DL2/deep_probabilistic_models_I/tutorial_1.ipynb
