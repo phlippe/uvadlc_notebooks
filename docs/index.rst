@@ -129,3 +129,10 @@ This is the first time we present these tutorials during the Deep Learning cours
    tutorial_notebooks/DL2/Advanced_Generative_Models/Normalizing_flows/advancednormflow.ipynb
    tutorial_notebooks/DL2/High-performant_DL/hyperparameter_search/hpdlhyperparam.ipynb
    tutorial_notebooks/DL2/High-performant_DL/Multi_GPU/hpdlmultigpu.ipynb
+
+   tutorial_notebooks/DL2/Neural_Network_Dynamical_Systems/First_tutorial/dynamical_systems_neural_odes.ipynb
+   tutorial_notebooks/DL2/Sampling_and_Gradient_Approximations/introduction.ipynb
+   tutorial_notebooks/DL2/Sampling_and_Gradient_Approximations/permutations.ipynb
+   tutorial_notebooks/DL2/Sampling_and_Gradient_Approximations/graphs.ipynb
+   tutorial_notebooks/DL2/Sampling_and_Gradient_Approximations/subsets.ipynb
+
