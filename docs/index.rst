@@ -126,6 +126,7 @@ This is the first time we present these tutorials during the Deep Learning cours
    tutorial_notebooks/DL2/Geometric_deep_learning/tutorial2_steerable_cnns
    tutorial_notebooks/DL2/deep_probabilistic_models_I/tutorial_1.ipynb
    tutorial_notebooks/DL2/deep_probabilistic_models_II/tutorial_2a.ipynb
+   tutorial_notebooks/DL2/deep_probabilistic_models_II/tutorial_2b.ipynb
    tutorial_notebooks/DL2/Advanced_Generative_Models/Normalizing_flows/advancednormflow.ipynb
    tutorial_notebooks/DL2/High-performant_DL/hyperparameter_search/hpdlhyperparam.ipynb
    tutorial_notebooks/DL2/High-performant_DL/Multi_GPU/hpdlmultigpu.ipynb
