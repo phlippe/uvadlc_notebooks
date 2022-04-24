@@ -132,4 +132,5 @@ This is the first time we present these tutorials during the Deep Learning cours
    tutorial_notebooks/DL2/High-performant_DL/Multi_GPU/hpdlmultigpu.ipynb
    tutorial_notebooks/DL2/Bayesian_Neural_Networks/Complete_DLII_BNN_2_2.ipynb
    tutorial_notebooks/DL2/Bayesian_Neural_Networks/Student_DLII_BNN_2_2.ipynb
+   tutorial_notebooks/DL2/Dynamical_Neural_Networks/Complete_DNN_2_2.ipynb
 
