@@ -131,6 +131,8 @@ This is the first time we present these tutorials during the Deep Learning cours
    tutorial_notebooks/DL2/High-performant_DL/hyperparameter_search/hpdlhyperparam.ipynb
    tutorial_notebooks/DL2/High-performant_DL/Multi_GPU/hpdlmultigpu.ipynb
    tutorial_notebooks/DL2/Bayesian_Neural_Networks/Complete_DLII_BNN_2_2.ipynb
+   tutorial_notebooks/DL2/Dynamical_Neural_Networks/Complete_DNN_2_1.ipynb
+   tutorial_notebooks/DL2/Dynamical_Neural_Networks/Complete_DNN_2_2.ipynb
    tutorial_notebooks/DL2/Dynamical_systems/dynamical_systems_neural_odes.ipynb
    tutorial_notebooks/DL2/sampling/introduction.ipynb
    tutorial_notebooks/DL2/sampling/subsets.ipynb
