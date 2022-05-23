@@ -90,6 +90,15 @@ Feedback, Questions or Contributions
 
 This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues are expected. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following `link <https://forms.gle/kENuNvcCq3LzQWDA8>`_ to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
 
+If you find the tutorials helpful and would like to cite them, you can use the following bibtex::
+
+   @misc{lippe2022uvadlc,
+      title        = {{UvA Deep Learning Tutorials}},
+      author       = {Phillip Lippe},
+      year         = 2022,
+      howpublished = {\url{https://uvadlc-notebooks.readthedocs.io/en/latest/}}
+   }
+
 
 .. toctree::
    :caption: Guides
