@@ -12,9 +12,14 @@ Welcome to the UvA Deep Learning Tutorials!
 | *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
 | *Author*: Phillip Lippe
 
+.. note::
+   Interested in learning JAX? We have recently started translating the notebooks from PyTorch to JAX+Flax. Check out our new notebooks in the tab *Deep Learning 1 (JAX+Flax)* to learn how you can speed up model trainings up to 50% with JAX!
+
+
 For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations.
 We will visit various topics such as optimization techniques, transformers, graph neural networks, and more (for a full list, see below).
 The notebooks are there to help you understand the material and teach you details of the PyTorch framework, including PyTorch Lightning.
+Further, we provide one-to-one translations of the notebooks to JAX+Flax as alternative framework.
 
 The notebooks are presented in the first hour of every group tutorial session.
 During the tutorial sessions, we will present the content and explain the implementation of the notebooks.
@@ -109,7 +114,7 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/guide3/Debugging_PyTorch
 
 .. toctree::
-   :caption: Deep Learning 1
+   :caption: Deep Learning 1 (PyTorch)
    :maxdepth: 2
 
    tutorial_notebooks/tutorial2/Introduction_to_PyTorch
@@ -126,6 +131,12 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/tutorial15/Vision_Transformer
    tutorial_notebooks/tutorial16/Meta_Learning
    tutorial_notebooks/tutorial17/SimCLR
+
+.. toctree::
+   :caption: Deep Learning 1 (JAX+Flax)
+   :maxdepth: 2
+
+   tutorial_notebooks/JAX/tutorial9/AE_CIFAR10
 
 .. toctree::
    :caption: Deep Learning 2

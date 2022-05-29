@@ -22,7 +22,7 @@ copyright = '2022, Phillip Lippe'
 author = 'Phillip Lippe'
 
 # The full version, including alpha/beta/rc tags
-release = 'v1.1'
+release = 'v1.2'
 
 
 # -- General configuration ---------------------------------------------------
