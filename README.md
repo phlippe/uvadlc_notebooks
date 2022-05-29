@@ -8,14 +8,15 @@ UvA Deep Learning Tutorials
 *Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)</br>
 *Author*: Phillip Lippe
 
-For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations. 
+or this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations.
 We will visit various topics such as optimization techniques, transformers, graph neural networks, and more (for a full list, see below).
-The notebooks are there to help you understand the material and teach you details of the PyTorch framework, including PyTorch Lightning. 
+The notebooks are there to help you understand the material and teach you details of the **PyTorch** framework, including **PyTorch Lightning**.
+Further, we provide one-to-one translations of the notebooks to **JAX+Flax** as alternative framework.
 
-The notebooks are presented in the first hour of every Thursday's tutorial session.
+The notebooks are presented in the first hour of every group tutorial session.
 During the tutorial sessions, we will present the content and explain the implementation of the notebooks.
 You can decide yourself whether you just want to look at the filled notebook, want to try it yourself, or code along during the practical session.
-The notebooks are not directly part of any mandatory assignments on which you would be graded or similarly. 
+The notebooks are not directly part of any mandatory assignments on which you would be graded or similarly.
 However, we encourage you to get familiar with the notebooks and experiment or extend them yourself.
 Further, the content presented will be relevant for the graded assignment and exam.
 
@@ -61,3 +62,13 @@ Feedback, Questions or Contributions
 ------------------------------------
 
 This is the first time we present these tutorials during the Deep Learning course. As with any other project, small bugs and issues are expected. We appreciate any feedback from students, whether it is about a spelling mistake, implementation bug, or suggestions for improvements/additions to the notebooks. Please use the following [link](https://docs.google.com/forms/d/e/1FAIpQLSeIhwrFSHlDSWGAgCN-RcTKm7Sn7P6bxzIyzIGge6xId1K8DQ/viewform?usp=sf_link) to submit feedback, or feel free to reach out to me directly per mail (p dot lippe at uva dot nl), or grab me during any TA session.
+
+If you find the tutorials helpful and would like to cite them, you can use the following bibtex:
+```bibtex
+@misc{lippe2022uvadlc,
+   title        = {{UvA Deep Learning Tutorials}},
+   author       = {Phillip Lippe},
+   year         = 2022,
+   howpublished = {\url{https://uvadlc-notebooks.readthedocs.io/en/latest/}}
+}
+```
