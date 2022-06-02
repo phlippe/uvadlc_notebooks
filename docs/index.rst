@@ -46,11 +46,11 @@ Schedule (Deep Learning 1)
 +------------------------------------------+---------------------------------------------------+
 | Thursday, 25. November 2021, 13.00-14.00 | Tutorial 5: Inception, ResNet and DenseNet        |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 2. December 2020, 13.00-14.00  | Tutorial 7: Graph Neural Networks                 |
+| Thursday, 2. December 2021, 13.00-14.00  | Tutorial 7: Graph Neural Networks                 |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 9. December 2020, 13.00-14.00  | Tutorial 6: Transformers and Multi-Head Attention |
+| Thursday, 9. December 2021, 13.00-14.00  | Tutorial 6: Transformers and Multi-Head Attention |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 16. December 2020, 13.00-14.00 | Tutorial 9: Deep Autoencoders                     |
+| Thursday, 16. December 2021, 13.00-14.00 | Tutorial 9: Deep Autoencoders                     |
 +------------------------------------------+---------------------------------------------------+
 
 How to run the notebooks
