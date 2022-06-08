@@ -136,6 +136,7 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    :caption: Deep Learning 1 (JAX+Flax)
    :maxdepth: 2
 
+   tutorial_notebooks/JAX/tutorial2/Introduction_to_JAX
    tutorial_notebooks/JAX/tutorial5/Inception_ResNet_DenseNet
    tutorial_notebooks/JAX/tutorial6/Transformers_and_MHAttention
    tutorial_notebooks/JAX/tutorial9/AE_CIFAR10
