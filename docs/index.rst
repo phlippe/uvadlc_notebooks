@@ -13,7 +13,7 @@ Welcome to the UvA Deep Learning Tutorials!
 | *Author*: Phillip Lippe
 
 .. note::
-   Interested in learning JAX? We have recently started translating the notebooks from PyTorch to JAX+Flax. Check out our new notebooks in the tab *Deep Learning 1 (JAX+Flax)* to learn how you can speed up model trainings up to 50% with JAX!
+   Interested in learning JAX? We have recently started translating the notebooks from PyTorch to JAX+Flax. Check out our new notebooks in the tab *Deep Learning 1 (JAX+Flax)* to learn how you can train models up to 3x faster with JAX!
 
 
 For this year's course edition, we created a series of Jupyter notebooks that are designed to help you understanding the "theory" from the lectures by seeing corresponding implementations.
