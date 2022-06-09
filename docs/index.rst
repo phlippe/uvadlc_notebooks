@@ -141,6 +141,7 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/JAX/tutorial6/Transformers_and_MHAttention
    tutorial_notebooks/JAX/tutorial7/GNN_overview
    tutorial_notebooks/JAX/tutorial9/AE_CIFAR10
+   tutorial_notebooks/JAX/tutorial15/Vision_Transformer
 
 .. toctree::
    :caption: Deep Learning 2
