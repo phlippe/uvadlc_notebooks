@@ -326,7 +326,7 @@ def train_model(model_name, save_name=None, **kwargs):
     # Create a PyTorch Lightning trainer with the generation callback
     trainer = pl.Trainer(default_root_dir=os.path.join(CHECKPOINT_PATH, save_name),                          # Where to save models
                          gpus=1 if str(device)=="cuda:0" else 0,                                             # We run on a single GPU (if possible)
-                         max_epochs=2,                                                                     # How many epochs to train for if no patience is set
+                         max_epochs=200,                                                                     # How many epochs to train for if no patience is set
                          callbacks=[ModelCheckpoint(save_weights_only=True, mode="max", monitor="val_acc")],                                           # Log learning rate every epoch
                          enable_progress_bar=False,                                                      # In case your notebook crashes due to the progress bar, consider increasing the refresh rate
                          check_val_every_n_epoch=2)
