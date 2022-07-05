@@ -112,6 +112,7 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/tutorial1/Lisa_Cluster
    tutorial_notebooks/guide2/Research_Projects
    tutorial_notebooks/guide3/Debugging_PyTorch
+   tutorial_notebooks/guide4/Research_Projects_with_JAX
 
 .. toctree::
    :caption: Deep Learning 1 (PyTorch)
