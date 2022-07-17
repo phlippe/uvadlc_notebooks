@@ -4,22 +4,22 @@
 
 
 ## Checklist
-- [ ] All packages are in the conda environment `dl2020`
-- [ ] Pretrained models are automatically downloaded and stored at https://github.com/phlippe/saved_models
+- [ ] All packages are in the conda environment `dl2021`
+- [ ] Pretrained models are automatically downloaded and stored at https://github.com/phlippe/saved_models / a pull request has been setup for this
 - [ ] Notebook has badges for:
 	- [ ] Filled notebook on github
 	- [ ] Filled notebook on Colab
-	- [ ] Empty notebook on github
-	- [ ] Empty notebook on Colab
 	- [ ] Saved models on github
-	- [ ] Saved models on Google Drive
-	- [ ] Status (In progress, First version, Finished)
+	- [ ] YouTube recording
+- [ ] The author names have been filled in
+- [ ] The notebook has been added to the doc tree (`docs/index.rst`)
+- [ ] All images of the notebook are included in the pull request
+- [ ] The website was build locally once (do not commit the html files)
 
 ### How Has This Been Tested?
-<!-- Please describe in detail how you tested your changes. -->
-<!-- Include details of your testing environment (local computer or Colab, CPU/GPU, conda env, etc.) -->
-<!-- The following checklist might help -->
-- [ ] Conda environment `dl2020`
+<!-- Make sure to have tested this notebook at least once for the conda environment, and once on GoogleColab -->
+<!-- Further, the tutorial needs to be executable for both CPU and GPU systems -->
+- [ ] Conda environment `dl2021`
 - [ ] Local computer - CPU
 - [ ] Local computer - GPU
 - [ ] Google Colab - CPU

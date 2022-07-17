@@ -1,0 +1,17 @@
+name: dl2020
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=22.0.4
+  - cudatoolkit=11.3
+  - pytorch=1.10.2
+  - torchvision=0.11
+  - pip:
+    - pytorch-lightning==1.5.10
+    - seaborn==0.11.2
+    - tensorboard==2.8.0
+    - pillow==9.0
+    - hydra-core==1.1
+    - mlflow==1.24.0
