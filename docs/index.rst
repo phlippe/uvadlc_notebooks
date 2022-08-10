@@ -138,6 +138,7 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    :maxdepth: 2
 
    tutorial_notebooks/JAX/tutorial2/Introduction_to_JAX
+   tutorial_notebooks/JAX/tutorial3/Activation_Functions
    tutorial_notebooks/JAX/tutorial5/Inception_ResNet_DenseNet
    tutorial_notebooks/JAX/tutorial6/Transformers_and_MHAttention
    tutorial_notebooks/JAX/tutorial7/GNN_overview
