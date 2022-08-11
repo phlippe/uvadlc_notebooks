@@ -144,6 +144,7 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/JAX/tutorial7/GNN_overview
    tutorial_notebooks/JAX/tutorial9/AE_CIFAR10
    tutorial_notebooks/JAX/tutorial11/NF_image_modeling
+   tutorial_notebooks/JAX/tutorial12/Autoregressive_Image_Modeling
    tutorial_notebooks/JAX/tutorial15/Vision_Transformer
 
 .. toctree::
