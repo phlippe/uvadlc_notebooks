@@ -7,7 +7,7 @@ Welcome to the UvA Deep Learning Tutorials!
 ===========================================
 
 | *Course website*: https://uvadlc.github.io/
-| *Course edition*: DL1 - Fall 2021, DL2 - Spring 2022, Being kept up to date
+| *Course edition*: DL1 - Fall 2022, DL2 - Spring 2022, Being kept up to date
 | *Repository*: https://github.com/phlippe/uvadlc_notebooks
 | *Recordings*: `YouTube Playlist <https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>`_
 | *Author*: Phillip Lippe
@@ -31,26 +31,25 @@ Further, the content presented will be relevant for the graded assignment and ex
 The tutorials have been integrated as official tutorials of PyTorch Lightning.
 Thus, you can also view them in `their documentation <https://pytorch-lightning.readthedocs.io/en/latest/>`_.
 
-Schedule (Deep Learning 1)
---------------------------
+Schedule (Deep Learning 1, edition 2022)
+----------------------------------------
 
 +------------------------------------------+---------------------------------------------------+
 | **Date**                                 | **Notebook**                                      |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 4. November 2021, 13.00-15.00  | Tutorial 2: Introduction to PyTorch               |
-|                                          | Guide 1: Working with the Lisa cluster            |
+| Tuesday, 1. November 2022, 17.00-18.00   | Tutorial 2: Introduction to PyTorch               |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 11. November 2021, 13.00-14.00 | Tutorial 3: Activation functions                  |
+| Tuesday, 8. November 2022, 17.00-18.00   | Tutorial 3: Activation functions                  |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 18. November 2021, 13.00-14.00 | Tutorial 4: Optimization and Initialization       |
+| Tuesday, 15. November 2022, 17.00-18.00  | Tutorial 4: Optimization and Initialization       |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 25. November 2021, 13.00-14.00 | Tutorial 5: Inception, ResNet and DenseNet        |
+| Tuesday, 22. November 2022, 17.00-18.00  | Tutorial 5: Inception, ResNet and DenseNet        |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 2. December 2021, 13.00-14.00  | Tutorial 7: Graph Neural Networks                 |
+| Tuesday, 29. November 2022, 17.00-18.00  | Tutorial 6: Transformers and Multi-Head Attention |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 9. December 2021, 13.00-14.00  | Tutorial 6: Transformers and Multi-Head Attention |
+| Tuesday, 6. December 2022, 17.00-18.00   | Tutorial 7: Graph Neural Networks                 |
 +------------------------------------------+---------------------------------------------------+
-| Thursday, 16. December 2021, 13.00-14.00 | Tutorial 9: Deep Autoencoders                     |
+| Tuesday, 13. December 2022, 17.00-18.00  | TBA                                               |
 +------------------------------------------+---------------------------------------------------+
 
 How to run the notebooks
