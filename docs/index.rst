@@ -34,23 +34,23 @@ Thus, you can also view them in `their documentation <https://pytorch-lightning.
 Schedule (Deep Learning 1, edition 2022)
 ----------------------------------------
 
-+------------------------------------------+---------------------------------------------------+
-| **Date**                                 | **Notebook**                                      |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 1. November 2022, 17.00-18.00   | Tutorial 2: Introduction to PyTorch               |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 8. November 2022, 17.00-18.00   | Tutorial 3: Activation functions                  |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 15. November 2022, 17.00-18.00  | Tutorial 4: Optimization and Initialization       |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 22. November 2022, 17.00-18.00  | Tutorial 5: Inception, ResNet and DenseNet        |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 29. November 2022, 17.00-18.00  | Tutorial 6: Transformers and Multi-Head Attention |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 6. December 2022, 17.00-18.00   | Tutorial 7: Graph Neural Networks                 |
-+------------------------------------------+---------------------------------------------------+
-| Tuesday, 13. December 2022, 17.00-18.00  | TBA                                               |
-+------------------------------------------+---------------------------------------------------+
++------------------------------------------+---------------------------------------------------------------+
+| **Date**                                 | **Notebook**                                                  |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 1. November 2022, 17.00-18.00   | Tutorial 2: Introduction to PyTorch                           |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 8. November 2022, 17.00-18.00   | Tutorial 3: Activation functions                              |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 15. November 2022, 17.00-18.00  | Tutorial 4: Optimization and Initialization                   |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 22. November 2022, 17.00-18.00  | Tutorial 5: Inception, ResNet and DenseNet                    |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 29. November 2022, 17.00-18.00  | Tutorial 6: Transformers and Multi-Head Attention             |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 6. December 2022, 17.00-18.00   | Tutorial 7: Graph Neural Networks                             |
++------------------------------------------+---------------------------------------------------------------+
+| Tuesday, 13. December 2022, 17.00-18.00  | Tutorial 17: Self-Supervised Contrastive Learning with SimCLR |
++------------------------------------------+---------------------------------------------------------------+
 
 How to run the notebooks
 ------------------------
@@ -64,7 +64,7 @@ However, we suggest that you also give them a try and run them yourself. There a
 
 - **Lisa cluster**: If you want to train your own (larger) neural networks based on the notebooks, you can make use of the Lisa cluster. However, this is only suggested if you really want to train a new model, and use the other two options to go through the discussion and analysis of the models. Lisa might not allow you with your student account to run Jupyter notebooks directly on the gpu_shared partition. Instead, you can first convert the notebooks to a script using :code:`jupyter nbconvert --to script ...ipynb`, and then start a job on Lisa for running the script. A few advices when running on Lisa:
 
-   - Disable the tqdm statements in the notebook. Otherwise your slurm output file might overflow and be several MB large. In PyTorch Lightning, you can do this by setting :code:`progress_bar_refresh_rate=0` in the trainer.
+   - Disable the tqdm statements in the notebook. Otherwise your slurm output file might overflow and be several MB large. In PyTorch Lightning, you can do this by setting :code:`enable_progress_bar=False` in the trainer.
    - Comment out the matplotlib plotting statements, or change :code:`plt.show()` to :code:`plt.savefig(...)`.
 
 Tutorial-Lecture alignment
