@@ -1,0 +1,24 @@
+name: dl2022
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.6
+  - pip=22.2.2
+  - pytorch-cuda=11.7
+  - pytorch=1.13.0
+  - torchvision=0.14.0
+  - torchaudio=0.13.0
+  - pip:
+    - pytorch-lightning==1.7.7
+    - tensorboard==2.10.1
+    - tabulate>=0.8.9
+    - tqdm>=4.62.3
+    - pillow>=8.0.1
+    - notebook>=6.4.5
+    - jupyterlab>=3.2.1
+    - matplotlib>=3.4.3
+    - seaborn>=0.11.2
+    - ipywidgets>=7.6.5
