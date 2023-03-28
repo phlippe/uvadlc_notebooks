@@ -168,4 +168,5 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/DL2/sampling/subsets.ipynb
    tutorial_notebooks/DL2/sampling/permutations.ipynb
    tutorial_notebooks/DL2/sampling/graphs.ipynb
+   tutorial_notebooks/DL2/Causality_and_CRL/citris-tutorial.ipynb
 
