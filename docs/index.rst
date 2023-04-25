@@ -160,7 +160,8 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/DL2/Advanced_Generative_Models/Normalizing_flows/advancednormflow.ipynb
    tutorial_notebooks/DL2/High-performant_DL/hyperparameter_search/hpdlhyperparam.ipynb
    tutorial_notebooks/DL2/High-performant_DL/Multi_GPU/hpdlmultigpu.ipynb
-   tutorial_notebooks/DL2/Bayesian_Neural_Networks/Complete_DLII_BNN_2_2.ipynb
+   tutorial_notebooks/DL2/Bayesian_Neural_Networks/dl2_bnn_tut1_students_with_answers.ipynb
+   tutorial_notebooks/DL2/Bayesian_Neural_Networks/dl2_bnn_tut2_student_with_answers.ipynb
    tutorial_notebooks/DL2/Dynamical_Neural_Networks/Complete_DNN_2_1.ipynb
    tutorial_notebooks/DL2/Dynamical_Neural_Networks/Complete_DNN_2_2.ipynb
    tutorial_notebooks/DL2/Dynamical_systems/dynamical_systems_neural_odes.ipynb
