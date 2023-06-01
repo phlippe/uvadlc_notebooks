@@ -705,6 +705,9 @@
          transform="matrix(0.9514,0,0,-0.9514,86.8093,16.9569)"
          id="path1356" />
     </g>
+  <style>
+      svg { background-color: rgb(252, 252, 252); }
+    </style>
   </defs>
   <g
      id="surface36922"

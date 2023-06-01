@@ -460,6 +460,12 @@
            id="path568" />
       </symbol>
     </g>
+  
+    <style>
+      svg {
+        background-color: rgb(252, 252, 252);
+      }
+    </style>
   </defs>
   <g
      id="surface49585">

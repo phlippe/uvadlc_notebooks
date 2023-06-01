@@ -18,7 +18,10 @@
   </rdf:RDF>
  </metadata>
  <defs>
-  <style type="text/css">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
+  <style type="text/css">
+    *{stroke-linecap:butt;stroke-linejoin:round;}
+    svg { background-color: rgb(252, 252, 252); }
+  </style>
  </defs>
  <g id="figure_1">
   <g id="patch_1">

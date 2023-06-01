@@ -342,6 +342,9 @@
          d="M 112.85156,58.320312 H 231.65234 V 120.82813 H 112.85156 Z m 0,0"
          id="path186" />
     </clipPath>
+    <style>
+      svg { background-color: rgb(252, 252, 252); }
+    </style>
   </defs>
   <g
      id="surface2041"

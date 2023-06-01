@@ -114,6 +114,11 @@
          d="M 251 51 L 303 51 L 303 100 L 251 100 Z M 251 51 "
          id="path74" />
     </clipPath>
+    <style>
+      svg {
+        background-color: rgb(252, 252, 252);
+      }
+    </style>
   </defs>
   <g
      id="surface6674">

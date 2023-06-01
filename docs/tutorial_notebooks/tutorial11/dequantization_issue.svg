@@ -60,7 +60,7 @@
      id="defs6">
     <style
        type="text/css"
-       id="style4">*{stroke-linecap:butt;stroke-linejoin:round;}</style>
+       id="style4">*{stroke-linecap:butt;stroke-linejoin:round;} svg { background-color: rgb(252, 252, 252); }</style>
   </defs>
   <g
      id="figure_1"
