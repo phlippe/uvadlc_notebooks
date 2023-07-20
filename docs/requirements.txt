@@ -3,7 +3,7 @@ sphinx-rtd-theme==0.5.2
 readthedocs-sphinx-ext
 nbsphinx==0.8.6
 ipython
-Pygments==2.9.0
+Pygments==2.15.0
 sphinxcontrib-bibtex>=2.1
 sphinxcontrib-svg2pdfconverter
 sphinx-gallery
