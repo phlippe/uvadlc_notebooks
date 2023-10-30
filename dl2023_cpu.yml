@@ -4,15 +4,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10.6
-  - pip=22.2.2
+  - python=3.11.5
+  - pip=23.3.1
   - cpuonly=2.0
-  - pytorch=1.13.0
-  - torchvision=0.14.0
-  - torchaudio=0.13.0
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - torchaudio=2.1.0
   - pip:
-    - pytorch-lightning==1.7.7
-    - tensorboard==2.10.1
+    - pytorch-lightning==2.1.0
+    - tensorboard==2.14.1
     - tabulate>=0.8.9
     - tqdm>=4.62.3
     - pillow>=8.0.1
