@@ -96,10 +96,10 @@ This is the first time we present these tutorials during the Deep Learning cours
 
 If you find the tutorials helpful and would like to cite them, you can use the following bibtex::
 
-   @misc{lippe2023uvadlc,
+   @misc{lippe2024uvadlc,
       title        = {{UvA Deep Learning Tutorials}},
       author       = {Phillip Lippe},
-      year         = 2023,
+      year         = 2024,
       howpublished = {\url{https://uvadlc-notebooks.readthedocs.io/en/latest/}}
    }
 
@@ -112,6 +112,22 @@ If you find the tutorials helpful and would like to cite them, you can use the f
    tutorial_notebooks/guide2/Research_Projects
    tutorial_notebooks/guide3/Debugging_PyTorch
    tutorial_notebooks/guide4/Research_Projects_with_JAX
+
+.. toctree::
+   :caption: Training Models at Scale
+   :maxdepth: 2
+
+   tutorial_notebooks/scaling/JAX/overview
+   tutorial_notebooks/scaling/JAX/single_gpu_techniques
+   tutorial_notebooks/scaling/JAX/single_gpu_transformer
+   tutorial_notebooks/scaling/JAX/data_parallel_intro
+   tutorial_notebooks/scaling/JAX/data_parallel_fsdp
+   tutorial_notebooks/scaling/JAX/pipeline_parallel_simple
+   tutorial_notebooks/scaling/JAX/pipeline_parallel_looping
+   tutorial_notebooks/scaling/JAX/tensor_parallel_simple
+   tutorial_notebooks/scaling/JAX/tensor_parallel_async
+   tutorial_notebooks/scaling/JAX/tensor_parallel_transformer
+   tutorial_notebooks/scaling/JAX/3d_parallelism
 
 .. toctree::
    :caption: Deep Learning 1 (PyTorch)

@@ -6,6 +6,7 @@ docs/tutorial_notebooks/.idea
 *.py
 docs/tutorial_notebooks/tutorial9/tensorboard
 docs/tutorial_notebooks/JAX/tutorial9/tensorboard
+docs/tutorial_notebooks/scaling/JAX/traces
 docs/tutorial_notebooks/tutorial11/*.py
 docs/tutorial_notebooks/tutorial2/*.tar
 docs/tutorial_notebooks/tutorial2/runs/
