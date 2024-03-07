@@ -4,7 +4,7 @@ UvA Deep Learning Tutorials
 *Note: To look at the notebooks in a nicer format, visit our RTD website: https://uvadlc-notebooks.readthedocs.io/en/latest/*
 
 *Course website*: https://uvadlc.github.io/<br>
-*Course edition*: Fall 2022 (Nov. 01 - Dec. 24) - Being kept up to date</br>
+*Course edition*: Fall 2023 (Nov. 01 - Dec. 24) - Being kept up to date</br>
 *Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)</br>
 *Author*: Phillip Lippe
 
@@ -65,10 +65,10 @@ This is the first time we present these tutorials during the Deep Learning cours
 
 If you find the tutorials helpful and would like to cite them, you can use the following bibtex:
 ```bibtex
-@misc{lippe2022uvadlc,
+@misc{lippe2024uvadlc,
    title        = {{UvA Deep Learning Tutorials}},
    author       = {Phillip Lippe},
-   year         = 2022,
+   year         = 2024,
    howpublished = {\url{https://uvadlc-notebooks.readthedocs.io/en/latest/}}
 }
 ```
