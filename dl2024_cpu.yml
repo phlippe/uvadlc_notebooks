@@ -1,0 +1,23 @@
+name: dl2024
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.4
+  - pip=24.2.0
+  - cpuonly=2.0
+  - pytorch=2.4.1
+  - torchvision=0.19.1
+  - torchaudio=2.4.1
+  - pip:
+    - pytorch-lightning==2.4.0
+    - tensorboard==2.17.1
+    - tabulate>=0.9.0
+    - tqdm>=4.66.5
+    - pillow>=10.4.0
+    - notebook>=7.2.2
+    - jupyterlab>=4.2.5
+    - matplotlib>=3.9.2
+    - seaborn>=0.13.2
+    - ipywidgets>=8.1.2
