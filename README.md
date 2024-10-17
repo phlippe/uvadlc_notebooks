@@ -4,7 +4,7 @@ UvA Deep Learning Tutorials
 *Note: To look at the notebooks in a nicer format, visit our RTD website: https://uvadlc-notebooks.readthedocs.io/en/latest/*
 
 *Course website*: https://uvadlc.github.io/<br>
-*Course edition*: Fall 2023 (Nov. 01 - Dec. 24) - Being kept up to date</br>
+*Course edition*: Fall 2024 (Oct. 28 - Dec. 20) - Being kept up to date</br>
 *Recordings*: [YouTube Playlist](<https://www.youtube.com/playlist?list=PLdlPlO1QhMiAkedeu0aJixfkknLRxk1nA>)</br>
 *Author*: Phillip Lippe
 
