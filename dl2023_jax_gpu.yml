@@ -9,7 +9,7 @@ dependencies:
   - pip=22.2.2
   - pytorch-cuda=11.7
   - pytorch=1.13.0
-  - jax=0.4.5
+  - jax>=0.4.25
   - jaxlib[build=*cuda*]
   - cuda-nvcc
   - torchvision=0.14.0
@@ -18,8 +18,9 @@ dependencies:
     - pytorch-lightning==1.7.7
     - tensorboard==2.11.2
     - tensorflow==2.11.0
-    - optax==0.1.4
-    - flax==0.6.6
+    - optax>=0.2.0
+    - flax>=0.7.5
+    - orbax-checkpoint>=0.4.0
     - tabulate>=0.8.9
     - tqdm>=4.62.3
     - pillow>=8.0.1
